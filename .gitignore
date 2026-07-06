@@ -216,3 +216,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ─────────────────────────────────────────────────────────────────────────────
+# IT-opt: model weights & reference data (large / non-redistributable).
+# Fetch these separately — see the PLACE_*_HERE.md notes in each directory.
+# ─────────────────────────────────────────────────────────────────────────────
+# AlphaFold 3 checkpoint (access-gated by Google DeepMind — do not commit)
+af3/models/af3.bin
+af3/models/af3.bin.zst
+# Protenix checkpoint + CCD reference data
+protenix/src/af3-dev/release_model/*.pt
+protenix/src/af3-dev/release_data/components.*
+
+# IT-opt: run outputs, caches, logs
+protenix/protenix_output/
+nmr_pipeline_outputs/
+out_*/
+logs/
+alignment_dir/
+msa_cache*/
+losses_*_checkpoint.pt
+wandb/

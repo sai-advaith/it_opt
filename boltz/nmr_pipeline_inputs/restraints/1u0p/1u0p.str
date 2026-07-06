@@ -1,0 +1,977 @@
+data_wwPDB_remediated_restraints_file_for_PDB_entry_1u0p
+
+# This wwPDB archive file contains, for PDB entry 1u0p:
+#
+# - Sequence information from the PDB mmCIF file
+# - NMR restraints from the PDB MR file
+#
+# In this file, the NMR restraints share the same atom names as in the coordinate 
+# file, and in this way can differ from the data deposited at the wwPDB. To achieve
+# this aim, the NMR restraints were parsed from their original format files, and
+# the coordinates and NMR restraints information were subsequently harmonized.
+#
+# Due to the complexity of this harmonization process, minor modifications could
+# have occurred to the NMR restraints information, or data could have been lost
+# because of parsing or conversion errors. The PDB file remains the
+# authoritative reference for the atomic coordinates and the originally deposited
+# restraints files remain the primary reference for these data.
+#
+# This file is generated as part of the wwPDB at the BioMagResBank (BMRB) in
+# collaboration with the PDBe (formerly MSD) group at the European
+# Bioinformatics Institute (EBI) and the CMBI/IMM group at the Radboud
+# University of Nijmegen.
+#
+# Several software packages were used to produce this file:
+#
+# - Wattos (BMRB and CMBI/IMM).
+# - FormatConverter and NMRStarExport (PDBe).
+# - CCPN framework (http://www.ccpn.ac.uk/).
+#
+# More information about this process can be found in the references below.
+# Please cite the original reference for this PDB entry.
+#
+# JF Doreleijers, A Nederveen, W Vranken, J Lin, AM Bonvin, R Kaptein, JL
+# Markley, and EL Ulrich (2005). BioMagResBank databases DOCR and FRED
+# containing converted and filtered sets of experimental NMR restraints and
+# coordinates from over 500 protein PDB structures. J. Biomol. NMR 32, 1-12.
+#
+# WF Vranken, W Boucher, TJ Stevens, RH Fogh, A Pajon, M Llinas, EL Ulrich, JL
+# Markley, J Ionides, ED Laue (2005). The CCPN data model for NMR spectroscopy:
+# development of a software pipeline. Proteins 59, 687-696.
+#
+# JF Doreleijers, WF Vranken, C Schulte, J Lin, JR Wedell, CJ Penkett, GW Vuister, 
+# G Vriend, JL Markley, and EL Ulrich (2009). The NMR Restraints Grid at BMRB for 
+# 5,266 Protein and Nucleic Acid PDB Entries. J Biomol. NMR 45, 389-396.
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                  entry_information
+   _Entry.Sf_framecode                 entry_information
+   _Entry.ID                           rr_1u0p
+   _Entry.Title                        'wwPDB remediated NMR restraints for PDB entry 1u0p'
+   _Entry.Version_type                 original
+   _Entry.NMR_STAR_version             3.1.0.8
+   _Entry.Experimental_method          NMR
+   _Entry.Experimental_method_subtype  solution
+   _Entry.Details                      'Contains the remediated restraint lists and coordinates for PDB entry 1u0p'
+   _Entry.PDB_coordinate_file_version  3.20
+
+   loop_
+      _Related_entries.Database_name
+      _Related_entries.Database_accession_code
+      _Related_entries.Relationship
+      _Related_entries.Entry_ID
+
+     PDB   1u0p   'Master copy'   rr_1u0p    
+
+   stop_
+
+save_
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_assembly
+   _Assembly.Sf_category           assembly
+   _Assembly.Sf_framecode          assembly
+   _Assembly.Entry_ID              rr_1u0p
+   _Assembly.ID                    1
+   _Assembly.Name                  1u0p
+   _Assembly.Number_of_components  1
+   _Assembly.Organic_ligands       0
+   _Assembly.Metal_ions            0
+   _Assembly.Non_standard_bonds    no
+   _Assembly.Paramagnetic          no
+   _Assembly.Thiol_state           'not present'
+   _Assembly.Molecular_mass        3079.4534
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+     1   fibritin   1   $fibritin   A   .   no   .   .   .   .   .   .   rr_1u0p   1    
+
+   stop_
+
+save_
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_fibritin
+   _Entity.Sf_category                      entity
+   _Entity.Sf_framecode                     fibritin
+   _Entity.Entry_ID                         rr_1u0p
+   _Entity.ID                               1
+   _Entity.Name                             fibritin
+   _Entity.Type                             polymer
+   _Entity.Polymer_type                     polypeptide(L)
+   _Entity.Polymer_strand_ID                A
+   _Entity.Polymer_seq_one_letter_code    
+;
+GYIPEAPRDGQAYVRKDGEW
+VLLSTFL
+;
+   _Entity.Ambiguous_conformational_states  no
+   _Entity.Ambiguous_chem_comp_sites        no
+   _Entity.Nstd_monomer                     no
+   _Entity.Nstd_chirality                   no
+   _Entity.Nstd_linkage                     no
+   _Entity.Number_of_monomers               27
+   _Entity.Paramagnetic                     no
+   _Entity.Thiol_state                      'not present'
+   _Entity.Parent_entity_ID                 1
+   _Entity.Formula_weight                   3079.4534
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+     1    .   GLY   .   rr_1u0p   1    
+     2    .   TYR   .   rr_1u0p   1    
+     3    .   ILE   .   rr_1u0p   1    
+     4    .   PRO   .   rr_1u0p   1    
+     5    .   GLU   .   rr_1u0p   1    
+     6    .   ALA   .   rr_1u0p   1    
+     7    .   PRO   .   rr_1u0p   1    
+     8    .   ARG   .   rr_1u0p   1    
+     9    .   ASP   .   rr_1u0p   1    
+     10   .   GLY   .   rr_1u0p   1    
+     11   .   GLN   .   rr_1u0p   1    
+     12   .   ALA   .   rr_1u0p   1    
+     13   .   TYR   .   rr_1u0p   1    
+     14   .   VAL   .   rr_1u0p   1    
+     15   .   ARG   .   rr_1u0p   1    
+     16   .   LYS   .   rr_1u0p   1    
+     17   .   ASP   .   rr_1u0p   1    
+     18   .   GLY   .   rr_1u0p   1    
+     19   .   GLU   .   rr_1u0p   1    
+     20   .   TRP   .   rr_1u0p   1    
+     21   .   VAL   .   rr_1u0p   1    
+     22   .   LEU   .   rr_1u0p   1    
+     23   .   LEU   .   rr_1u0p   1    
+     24   .   SER   .   rr_1u0p   1    
+     25   .   THR   .   rr_1u0p   1    
+     26   .   PHE   .   rr_1u0p   1    
+     27   .   LEU   .   rr_1u0p   1    
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+     .   GLY   1    1    rr_1u0p   1    
+     .   TYR   2    2    rr_1u0p   1    
+     .   ILE   3    3    rr_1u0p   1    
+     .   PRO   4    4    rr_1u0p   1    
+     .   GLU   5    5    rr_1u0p   1    
+     .   ALA   6    6    rr_1u0p   1    
+     .   PRO   7    7    rr_1u0p   1    
+     .   ARG   8    8    rr_1u0p   1    
+     .   ASP   9    9    rr_1u0p   1    
+     .   GLY   10   10   rr_1u0p   1    
+     .   GLN   11   11   rr_1u0p   1    
+     .   ALA   12   12   rr_1u0p   1    
+     .   TYR   13   13   rr_1u0p   1    
+     .   VAL   14   14   rr_1u0p   1    
+     .   ARG   15   15   rr_1u0p   1    
+     .   LYS   16   16   rr_1u0p   1    
+     .   ASP   17   17   rr_1u0p   1    
+     .   GLY   18   18   rr_1u0p   1    
+     .   GLU   19   19   rr_1u0p   1    
+     .   TRP   20   20   rr_1u0p   1    
+     .   VAL   21   21   rr_1u0p   1    
+     .   LEU   22   22   rr_1u0p   1    
+     .   LEU   23   23   rr_1u0p   1    
+     .   SER   24   24   rr_1u0p   1    
+     .   THR   25   25   rr_1u0p   1    
+     .   PHE   26   26   rr_1u0p   1    
+     .   LEU   27   27   rr_1u0p   1    
+
+   stop_
+
+save_
+
+
+##############################
+#  Structure determinations  #
+##############################
+
+    ##########################
+    #  Conformer statistics  #
+    ##########################
+
+save_conformer_statistics
+   _Conformer_stat_list.Sf_category                    conformer_statistics
+   _Conformer_stat_list.Sf_framecode                   conformer_statistics
+   _Conformer_stat_list.Entry_ID                       rr_1u0p
+   _Conformer_stat_list.ID                             1
+   _Conformer_stat_list.Conf_family_coord_set_ID       1
+   _Conformer_stat_list.Conf_family_coord_set_label    $Original_constraints_and_structures
+   _Conformer_stat_list.Conformer_submitted_total_num  10
+
+save_
+
+###########################
+#  Constraint Statistics  #
+###########################
+
+save_constraint_statistics
+   _Constraint_stat_list.Sf_framecode  constraint_statistics
+   _Constraint_stat_list.Sf_category   constraint_statistics
+   _Constraint_stat_list.Entry_ID      rr_1u0p
+   _Constraint_stat_list.ID            1
+
+   loop_
+      _Constraint_file.ID
+      _Constraint_file.Constraint_filename
+      _Constraint_file.Software_ID
+      _Constraint_file.Software_label
+      _Constraint_file.Software_name
+      _Constraint_file.Block_ID
+      _Constraint_file.Constraint_type
+      _Constraint_file.Constraint_subtype
+      _Constraint_file.Constraint_subsubtype
+      _Constraint_file.Constraint_number
+      _Constraint_file.Entry_ID
+      _Constraint_file.Constraint_stat_list_ID
+
+     1   1u0p.mr   .   .   'MR format'   1   comment                  'Not applicable'   'Not applicable'   0     rr_1u0p   1    
+     1   1u0p.mr   .   .   XPLOR/CNS     2   distance                 NOE                simple             209   rr_1u0p   1    
+     1   1u0p.mr   .   .   XPLOR/CNS     3   'coupling constant'      'Not applicable'   'Not applicable'   0     rr_1u0p   1    
+     1   1u0p.mr   .   .   XPLOR/CNS     4   'chemical shift'         'Not applicable'   'Not applicable'   0     rr_1u0p   1    
+     1   1u0p.mr   .   .   XPLOR/CNS     5   'dipolar coupling'       'Not applicable'   'Not applicable'   29    rr_1u0p   1    
+     1   1u0p.mr   .   .   XPLOR/CNS     6   'dihedral angle'         'Not applicable'   'Not applicable'   25    rr_1u0p   1    
+     1   1u0p.mr   .   .   'MR format'   7   'nomenclature mapping'   'Not applicable'   'Not applicable'   0     rr_1u0p   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Sf_category         general_distance_constraints
+   _Gen_dist_constraint_list.Sf_framecode        CNS/XPLOR_distance_constraints_2
+   _Gen_dist_constraint_list.Entry_ID            rr_1u0p
+   _Gen_dist_constraint_list.ID                  1
+   _Gen_dist_constraint_list.Constraint_type     NOE
+   _Gen_dist_constraint_list.Details             'Generated by Wattos'
+   _Gen_dist_constraint_list.Constraint_file_ID  1
+   _Gen_dist_constraint_list.Block_ID            2
+
+   loop_
+      _Gen_dist_constraint_software.Software_ID
+      _Gen_dist_constraint_software.Software_label
+      _Gen_dist_constraint_software.Method_ID
+      _Gen_dist_constraint_software.Method_label
+      _Gen_dist_constraint_software.Entry_ID
+      _Gen_dist_constraint_software.Gen_dist_constraint_list_ID
+
+     .   .   .   .   rr_1u0p   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint.ID
+      _Gen_dist_constraint.Member_ID
+      _Gen_dist_constraint.Member_logic_code
+      _Gen_dist_constraint.Assembly_atom_ID_1
+      _Gen_dist_constraint.Entity_assembly_ID_1
+      _Gen_dist_constraint.Entity_ID_1
+      _Gen_dist_constraint.Comp_index_ID_1
+      _Gen_dist_constraint.Seq_ID_1
+      _Gen_dist_constraint.Comp_ID_1
+      _Gen_dist_constraint.Atom_ID_1
+      _Gen_dist_constraint.Atom_type_1
+      _Gen_dist_constraint.Atom_isotope_number_1
+      _Gen_dist_constraint.Resonance_ID_1
+      _Gen_dist_constraint.Assembly_atom_ID_2
+      _Gen_dist_constraint.Entity_assembly_ID_2
+      _Gen_dist_constraint.Entity_ID_2
+      _Gen_dist_constraint.Comp_index_ID_2
+      _Gen_dist_constraint.Seq_ID_2
+      _Gen_dist_constraint.Comp_ID_2
+      _Gen_dist_constraint.Atom_ID_2
+      _Gen_dist_constraint.Atom_type_2
+      _Gen_dist_constraint.Atom_isotope_number_2
+      _Gen_dist_constraint.Resonance_ID_2
+      _Gen_dist_constraint.Intensity_val
+      _Gen_dist_constraint.Intensity_lower_val_err
+      _Gen_dist_constraint.Intensity_upper_val_err
+      _Gen_dist_constraint.Distance_val
+      _Gen_dist_constraint.Distance_lower_bound_val
+      _Gen_dist_constraint.Distance_upper_bound_val
+      _Gen_dist_constraint.Contribution_fractional_val
+      _Gen_dist_constraint.Spectral_peak_ID
+      _Gen_dist_constraint.Spectral_peak_list_ID
+      _Gen_dist_constraint.PDB_record_ID_1
+      _Gen_dist_constraint.PDB_model_num_1
+      _Gen_dist_constraint.PDB_strand_ID_1
+      _Gen_dist_constraint.PDB_ins_code_1
+      _Gen_dist_constraint.PDB_residue_no_1
+      _Gen_dist_constraint.PDB_residue_name_1
+      _Gen_dist_constraint.PDB_atom_name_1
+      _Gen_dist_constraint.PDB_record_ID_2
+      _Gen_dist_constraint.PDB_model_num_2
+      _Gen_dist_constraint.PDB_strand_ID_2
+      _Gen_dist_constraint.PDB_ins_code_2
+      _Gen_dist_constraint.PDB_residue_no_2
+      _Gen_dist_constraint.PDB_residue_name_2
+      _Gen_dist_constraint.PDB_atom_name_2
+      _Gen_dist_constraint.Auth_entity_assembly_ID_1
+      _Gen_dist_constraint.Auth_asym_ID_1
+      _Gen_dist_constraint.Auth_chain_ID_1
+      _Gen_dist_constraint.Auth_seq_ID_1
+      _Gen_dist_constraint.Auth_comp_ID_1
+      _Gen_dist_constraint.Auth_atom_ID_1
+      _Gen_dist_constraint.Auth_alt_ID_1
+      _Gen_dist_constraint.Auth_atom_name_1
+      _Gen_dist_constraint.Auth_entity_assembly_ID_2
+      _Gen_dist_constraint.Auth_asym_ID_2
+      _Gen_dist_constraint.Auth_chain_ID_2
+      _Gen_dist_constraint.Auth_seq_ID_2
+      _Gen_dist_constraint.Auth_comp_ID_2
+      _Gen_dist_constraint.Auth_atom_ID_2
+      _Gen_dist_constraint.Auth_alt_ID_2
+      _Gen_dist_constraint.Auth_atom_name_2
+      _Gen_dist_constraint.Entry_ID
+      _Gen_dist_constraint.Gen_dist_constraint_list_ID
+
+     1     1   OR   .   1   1   2    2    TYR   QD    H   .   .   .   1   1   2    2    TYR   HB2    H   .   .   .   .   .   2.13167   1.83167   2.43167   .   .   .   .   .   A   .   2    TYR   QD    .   .   A   .   2    TYR   HB2    .   .   .   2    .   HD#    .   .   .   .   .   2    .   HB#    .   .   rr_1u0p   1    
+     1     2   OR   .   1   1   2    2    TYR   QD    H   .   .   .   1   1   2    2    TYR   HB3    H   .   .   .   .   .   2.13167   1.83167   2.43167   .   .   .   .   .   A   .   2    TYR   QD    .   .   A   .   2    TYR   HB3    .   .   .   2    .   HD#    .   .   .   .   .   2    .   HB#    .   .   rr_1u0p   1    
+     2     1   OR   .   1   1   2    2    TYR   QD    H   .   .   .   1   1   2    2    TYR   HB2    H   .   .   .   .   .   2.19393   1.89393   2.49393   .   .   .   .   .   A   .   2    TYR   QD    .   .   A   .   2    TYR   HB2    .   .   .   2    .   HD#    .   .   .   .   .   2    .   HB#    .   .   rr_1u0p   1    
+     2     2   OR   .   1   1   2    2    TYR   QD    H   .   .   .   1   1   2    2    TYR   HB3    H   .   .   .   .   .   2.19393   1.89393   2.49393   .   .   .   .   .   A   .   2    TYR   QD    .   .   A   .   2    TYR   HB3    .   .   .   2    .   HD#    .   .   .   .   .   2    .   HB#    .   .   rr_1u0p   1    
+     3     1   OR   .   1   1   2    2    TYR   H     H   .   .   .   1   1   1    1    GLY   HA2    H   .   .   .   .   .   2.21992   1.91992   2.51992   .   .   .   .   .   A   .   2    TYR   H     .   .   A   .   1    GLY   HA2    .   .   .   2    .   HN     .   .   .   .   .   1    .   HA#    .   .   rr_1u0p   1    
+     3     2   OR   .   1   1   2    2    TYR   H     H   .   .   .   1   1   1    1    GLY   HA3    H   .   .   .   .   .   2.21992   1.91992   2.51992   .   .   .   .   .   A   .   2    TYR   H     .   .   A   .   1    GLY   HA3    .   .   .   2    .   HN     .   .   .   .   .   1    .   HA#    .   .   rr_1u0p   1    
+     4     1   OR   .   1   1   2    2    TYR   H     H   .   .   .   1   1   2    2    TYR   HB2    H   .   .   .   .   .   2.20732   1.90732   2.50732   .   .   .   .   .   A   .   2    TYR   H     .   .   A   .   2    TYR   HB2    .   .   .   2    .   HN     .   .   .   .   .   2    .   HB#    .   .   rr_1u0p   1    
+     4     2   OR   .   1   1   2    2    TYR   HB3   H   .   .   .   1   1   2    2    TYR   H      H   .   .   .   .   .   2.20732   1.90732   2.50732   .   .   .   .   .   A   .   2    TYR   HB3   .   .   A   .   2    TYR   H      .   .   .   2    .   HB#    .   .   .   .   .   2    .   HN     .   .   rr_1u0p   1    
+     5     1   OR   .   1   1   2    2    TYR   H     H   .   .   .   1   1   2    2    TYR   HB2    H   .   .   .   .   .   2.42617   2.12617   2.72617   .   .   .   .   .   A   .   2    TYR   H     .   .   A   .   2    TYR   HB2    .   .   .   2    .   HN     .   .   .   .   .   2    .   HB#    .   .   rr_1u0p   1    
+     5     2   OR   .   1   1   2    2    TYR   HB3   H   .   .   .   1   1   2    2    TYR   H      H   .   .   .   .   .   2.42617   2.12617   2.72617   .   .   .   .   .   A   .   2    TYR   HB3   .   .   A   .   2    TYR   H      .   .   .   2    .   HB#    .   .   .   .   .   2    .   HN     .   .   rr_1u0p   1    
+     6     1   .    .   1   1   3    3    ILE   H     H   .   .   .   1   1   2    2    TYR   HA     H   .   .   .   .   .   1.99665   1.79665   2.29665   .   .   .   .   .   A   .   3    ILE   H     .   .   A   .   2    TYR   HA     .   .   .   3    .   HN     .   .   .   .   .   2    .   HA     .   .   rr_1u0p   1    
+     7     1   .    .   1   1   3    3    ILE   H     H   .   .   .   1   1   3    3    ILE   HA     H   .   .   .   .   .   2.55810   2.45810   2.75810   .   .   .   .   .   A   .   3    ILE   H     .   .   A   .   3    ILE   HA     .   .   .   3    .   HN     .   .   .   .   .   3    .   HA     .   .   rr_1u0p   1    
+     8     1   .    .   1   1   3    3    ILE   H     H   .   .   .   1   1   3    3    ILE   HB     H   .   .   .   .   .   2.54117   2.24117   2.84117   .   .   .   .   .   A   .   3    ILE   H     .   .   A   .   3    ILE   HB     .   .   .   3    .   HN     .   .   .   .   .   3    .   HB     .   .   rr_1u0p   1    
+     9     1   .    .   1   1   3    3    ILE   H     H   .   .   .   1   1   3    3    ILE   HG13   H   .   .   .   .   .   2.66830   2.36830   2.96830   .   .   .   .   .   A   .   3    ILE   H     .   .   A   .   3    ILE   HG13   .   .   .   3    .   HN     .   .   .   .   .   3    .   HG11   .   .   rr_1u0p   1    
+     10    1   .    .   1   1   3    3    ILE   H     H   .   .   .   1   1   3    3    ILE   HG12   H   .   .   .   .   .   2.79433   2.49433   3.09433   .   .   .   .   .   A   .   3    ILE   H     .   .   A   .   3    ILE   HG12   .   .   .   3    .   HN     .   .   .   .   .   3    .   HG12   .   .   rr_1u0p   1    
+     11    1   OR   .   1   1   3    3    ILE   MG    H   .   .   .   1   1   4    4    PRO   HD2    H   .   .   .   .   .   2.60040   2.30040   2.90040   .   .   .   .   .   A   .   3    ILE   MG    .   .   A   .   4    PRO   HD2    .   .   .   3    .   HG2#   .   .   .   .   .   4    .   HD#    .   .   rr_1u0p   1    
+     11    2   OR   .   1   1   4    4    PRO   HD3   H   .   .   .   1   1   3    3    ILE   MG     H   .   .   .   .   .   2.60040   2.30040   2.90040   .   .   .   .   .   A   .   4    PRO   HD3   .   .   A   .   3    ILE   MG     .   .   .   4    .   HD#    .   .   .   .   .   3    .   HG2#   .   .   rr_1u0p   1    
+     12    1   .    .   1   1   5    5    GLU   H     H   .   .   .   1   1   4    4    PRO   HA     H   .   .   .   .   .   2.00159   1.80159   2.20159   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   4    PRO   HA     .   .   .   5    .   HN     .   .   .   .   .   4    .   HA     .   .   rr_1u0p   1    
+     13    1   .    .   1   1   5    5    GLU   H     H   .   .   .   1   1   5    5    GLU   HA     H   .   .   .   .   .   2.36697   2.06697   2.66697   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   5    GLU   HA     .   .   .   5    .   HN     .   .   .   .   .   5    .   HA     .   .   rr_1u0p   1    
+     14    1   OR   .   1   1   5    5    GLU   H     H   .   .   .   1   1   5    5    GLU   HB2    H   .   .   .   .   .   2.40528   2.10528   2.70528   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   5    GLU   HB2    .   .   .   5    .   HN     .   .   .   .   .   5    .   HB#    .   .   rr_1u0p   1    
+     14    2   OR   .   1   1   5    5    GLU   H     H   .   .   .   1   1   5    5    GLU   HB3    H   .   .   .   .   .   2.40528   2.10528   2.70528   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   5    GLU   HB3    .   .   .   5    .   HN     .   .   .   .   .   5    .   HB#    .   .   rr_1u0p   1    
+     15    1   OR   .   1   1   5    5    GLU   H     H   .   .   .   1   1   5    5    GLU   HB2    H   .   .   .   .   .   2.62645   2.32645   2.92645   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   5    GLU   HB2    .   .   .   5    .   HN     .   .   .   .   .   5    .   HB#    .   .   rr_1u0p   1    
+     15    2   OR   .   1   1   5    5    GLU   H     H   .   .   .   1   1   5    5    GLU   HB3    H   .   .   .   .   .   2.62645   2.32645   2.92645   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   5    GLU   HB3    .   .   .   5    .   HN     .   .   .   .   .   5    .   HB#    .   .   rr_1u0p   1    
+     16    1   OR   .   1   1   5    5    GLU   H     H   .   .   .   1   1   5    5    GLU   HG2    H   .   .   .   .   .   2.73750   2.43750   3.03750   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   5    GLU   HG2    .   .   .   5    .   HN     .   .   .   .   .   5    .   HG#    .   .   rr_1u0p   1    
+     16    2   OR   .   1   1   5    5    GLU   H     H   .   .   .   1   1   5    5    GLU   HG3    H   .   .   .   .   .   2.73750   2.43750   3.03750   .   .   .   .   .   A   .   5    GLU   H     .   .   A   .   5    GLU   HG3    .   .   .   5    .   HN     .   .   .   .   .   5    .   HG#    .   .   rr_1u0p   1    
+     17    1   .    .   1   1   6    6    ALA   H     H   .   .   .   1   1   6    6    ALA   MB     H   .   .   .   .   .   2.23036   1.93036   2.83036   .   .   .   .   .   A   .   6    ALA   H     .   .   A   .   6    ALA   MB     .   .   .   6    .   HN     .   .   .   .   .   6    .   HB#    .   .   rr_1u0p   1    
+     18    1   .    .   1   1   5    5    GLU   HA    H   .   .   .   1   1   6    6    ALA   H      H   .   .   .   .   .   2.03036   1.93036   2.23036   .   .   .   .   .   A   .   5    GLU   HA    .   .   A   .   6    ALA   H      .   .   .   5    .   HA     .   .   .   .   .   6    .   HN     .   .   rr_1u0p   1    
+     19    1   .    .   1   1   6    6    ALA   H     H   .   .   .   1   1   6    6    ALA   HA     H   .   .   .   .   .   2.73036   2.63036   2.93036   .   .   .   .   .   A   .   6    ALA   H     .   .   A   .   6    ALA   HA     .   .   .   6    .   HN     .   .   .   .   .   6    .   HA     .   .   rr_1u0p   1    
+     20    1   OR   .   1   1   6    6    ALA   MB    H   .   .   .   1   1   7    7    PRO   HD2    H   .   .   .   .   .   2.66355   2.36355   2.96355   .   .   .   .   .   A   .   6    ALA   MB    .   .   A   .   7    PRO   HD2    .   .   .   6    .   HB#    .   .   .   .   .   7    .   HD#    .   .   rr_1u0p   1    
+     20    2   OR   .   1   1   6    6    ALA   MB    H   .   .   .   1   1   7    7    PRO   HD3    H   .   .   .   .   .   2.66355   2.36355   2.96355   .   .   .   .   .   A   .   6    ALA   MB    .   .   A   .   7    PRO   HD3    .   .   .   6    .   HB#    .   .   .   .   .   7    .   HD#    .   .   rr_1u0p   1    
+     21    1   .    .   1   1   8    8    ARG   H     H   .   .   .   1   1   7    7    PRO   HA     H   .   .   .   .   .   2.03105   1.83105   2.23105   .   .   .   .   .   A   .   8    ARG   H     .   .   A   .   7    PRO   HA     .   .   .   8    .   HN     .   .   .   .   .   7    .   HA     .   .   rr_1u0p   1    
+     22    1   .    .   1   1   8    8    ARG   H     H   .   .   .   1   1   8    8    ARG   HA     H   .   .   .   .   .   2.61014   2.51014   2.81014   .   .   .   .   .   A   .   8    ARG   H     .   .   A   .   8    ARG   HA     .   .   .   8    .   HN     .   .   .   .   .   8    .   HA     .   .   rr_1u0p   1    
+     23    1   .    .   1   1   8    8    ARG   H     H   .   .   .   1   1   8    8    ARG   HB3    H   .   .   .   .   .   2.44585   2.14585   2.74585   .   .   .   .   .   A   .   8    ARG   H     .   .   A   .   8    ARG   HB3    .   .   .   8    .   HN     .   .   .   .   .   8    .   HB1    .   .   rr_1u0p   1    
+     24    1   .    .   1   1   8    8    ARG   H     H   .   .   .   1   1   8    8    ARG   HB2    H   .   .   .   .   .   2.49466   2.19466   2.79466   .   .   .   .   .   A   .   8    ARG   H     .   .   A   .   8    ARG   HB2    .   .   .   8    .   HN     .   .   .   .   .   8    .   HB2    .   .   rr_1u0p   1    
+     25    1   .    .   1   1   8    8    ARG   HA    H   .   .   .   1   1   9    9    ASP   H      H   .   .   .   .   .   2.02290   1.82290   2.22290   .   .   .   .   .   A   .   8    ARG   HA    .   .   A   .   9    ASP   H      .   .   .   8    .   HA     .   .   .   .   .   9    .   HN     .   .   rr_1u0p   1    
+     26    1   .    .   1   1   9    9    ASP   H     H   .   .   .   1   1   9    9    ASP   HA     H   .   .   .   .   .   2.00724   1.80724   2.60724   .   .   .   .   .   A   .   9    ASP   H     .   .   A   .   9    ASP   HA     .   .   .   9    .   HN     .   .   .   .   .   9    .   HA     .   .   rr_1u0p   1    
+     27    1   .    .   1   1   9    9    ASP   H     H   .   .   .   1   1   9    9    ASP   HB3    H   .   .   .   .   .   2.32183   2.02183   3.02183   .   .   .   .   .   A   .   9    ASP   H     .   .   A   .   9    ASP   HB3    .   .   .   9    .   HN     .   .   .   .   .   9    .   HB1    .   .   rr_1u0p   1    
+     28    1   .    .   1   1   9    9    ASP   H     H   .   .   .   1   1   9    9    ASP   HB2    H   .   .   .   .   .   2.32183   2.02183   3.02183   .   .   .   .   .   A   .   9    ASP   H     .   .   A   .   9    ASP   HB2    .   .   .   9    .   HN     .   .   .   .   .   9    .   HB2    .   .   rr_1u0p   1    
+     29    1   .    .   1   1   10   10   GLY   H     H   .   .   .   1   1   9    9    ASP   HB3    H   .   .   .   .   .   3.50000   3.20000   5.00000   .   .   .   .   .   A   .   10   GLY   H     .   .   A   .   9    ASP   HB3    .   .   .   10   .   HN     .   .   .   .   .   9    .   HB1    .   .   rr_1u0p   1    
+     30    1   .    .   1   1   10   10   GLY   H     H   .   .   .   1   1   9    9    ASP   HB2    H   .   .   .   .   .   3.50000   3.20000   5.00000   .   .   .   .   .   A   .   10   GLY   H     .   .   A   .   9    ASP   HB2    .   .   .   10   .   HN     .   .   .   .   .   9    .   HB2    .   .   rr_1u0p   1    
+     31    1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   10   10   GLY   H      H   .   .   .   .   .   2.73980   2.28980   3.03980   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   10   GLY   H      .   .   .   9    .   HA     .   .   .   .   .   10   .   HN     .   .   rr_1u0p   1    
+     32    1   .    .   1   1   10   10   GLY   H     H   .   .   .   1   1   10   10   GLY   HA2    H   .   .   .   .   .   2.13980   1.93980   2.58980   .   .   .   .   .   A   .   10   GLY   H     .   .   A   .   10   GLY   HA2    .   .   .   10   .   HN     .   .   .   .   .   10   .   HA2    .   .   rr_1u0p   1    
+     33    1   .    .   1   1   10   10   GLY   H     H   .   .   .   1   1   10   10   GLY   HA3    H   .   .   .   .   .   2.26240   2.06240   2.81240   .   .   .   .   .   A   .   10   GLY   H     .   .   A   .   10   GLY   HA3    .   .   .   10   .   HN     .   .   .   .   .   10   .   HA1    .   .   rr_1u0p   1    
+     34    1   OR   .   1   1   10   10   GLY   H     H   .   .   .   1   1   10   10   GLY   HA2    H   .   .   .   .   .   2.13240   1.93240   2.33240   .   .   .   .   .   A   .   10   GLY   H     .   .   A   .   10   GLY   HA2    .   .   .   10   .   HN     .   .   .   .   .   10   .   HA#    .   .   rr_1u0p   1    
+     34    2   OR   .   1   1   10   10   GLY   H     H   .   .   .   1   1   10   10   GLY   HA3    H   .   .   .   .   .   2.13240   1.93240   2.33240   .   .   .   .   .   A   .   10   GLY   H     .   .   A   .   10   GLY   HA3    .   .   .   10   .   HN     .   .   .   .   .   10   .   HA#    .   .   rr_1u0p   1    
+     35    1   .    .   1   1   11   11   GLN   H     H   .   .   .   1   1   10   10   GLY   HA2    H   .   .   .   .   .   2.43090   2.23090   2.93090   .   .   .   .   .   A   .   11   GLN   H     .   .   A   .   10   GLY   HA2    .   .   .   11   .   HN     .   .   .   .   .   10   .   HA2    .   .   rr_1u0p   1    
+     36    1   .    .   1   1   10   10   GLY   HA3   H   .   .   .   1   1   11   11   GLN   H      H   .   .   .   .   .   2.62230   2.42230   3.12230   .   .   .   .   .   A   .   10   GLY   HA3   .   .   A   .   11   GLN   H      .   .   .   10   .   HA1    .   .   .   .   .   11   .   HN     .   .   rr_1u0p   1    
+     37    1   OR   .   1   1   11   11   GLN   H     H   .   .   .   1   1   11   11   GLN   HB2    H   .   .   .   .   .   2.37710   2.07710   2.67710   .   .   .   .   .   A   .   11   GLN   H     .   .   A   .   11   GLN   HB2    .   .   .   11   .   HN     .   .   .   .   .   11   .   HB#    .   .   rr_1u0p   1    
+     37    2   OR   .   1   1   11   11   GLN   H     H   .   .   .   1   1   11   11   GLN   HB3    H   .   .   .   .   .   2.37710   2.07710   2.67710   .   .   .   .   .   A   .   11   GLN   H     .   .   A   .   11   GLN   HB3    .   .   .   11   .   HN     .   .   .   .   .   11   .   HB#    .   .   rr_1u0p   1    
+     38    1   OR   .   1   1   11   11   GLN   H     H   .   .   .   1   1   11   11   GLN   HB2    H   .   .   .   .   .   2.46670   2.16670   2.76670   .   .   .   .   .   A   .   11   GLN   H     .   .   A   .   11   GLN   HB2    .   .   .   11   .   HN     .   .   .   .   .   11   .   HB#    .   .   rr_1u0p   1    
+     38    2   OR   .   1   1   11   11   GLN   H     H   .   .   .   1   1   11   11   GLN   HB3    H   .   .   .   .   .   2.46670   2.16670   2.76670   .   .   .   .   .   A   .   11   GLN   H     .   .   A   .   11   GLN   HB3    .   .   .   11   .   HN     .   .   .   .   .   11   .   HB#    .   .   rr_1u0p   1    
+     39    1   OR   .   1   1   11   11   GLN   H     H   .   .   .   1   1   11   11   GLN   HG2    H   .   .   .   .   .   2.46130   2.16130   2.76130   .   .   .   .   .   A   .   11   GLN   H     .   .   A   .   11   GLN   HG2    .   .   .   11   .   HN     .   .   .   .   .   11   .   HG#    .   .   rr_1u0p   1    
+     39    2   OR   .   1   1   11   11   GLN   H     H   .   .   .   1   1   11   11   GLN   HG3    H   .   .   .   .   .   2.46130   2.16130   2.76130   .   .   .   .   .   A   .   11   GLN   H     .   .   A   .   11   GLN   HG3    .   .   .   11   .   HN     .   .   .   .   .   11   .   HG#    .   .   rr_1u0p   1    
+     40    1   .    .   1   1   12   12   ALA   H     H   .   .   .   1   1   11   11   GLN   HA     H   .   .   .   .   .   1.85099   1.65099   2.25099   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   11   GLN   HA     .   .   .   12   .   HN     .   .   .   .   .   11   .   HA     .   .   rr_1u0p   1    
+     41    1   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   11   11   GLN   HB2    H   .   .   .   .   .   2.78290   2.48290   3.08290   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   11   GLN   HB2    .   .   .   12   .   HN     .   .   .   .   .   11   .   HB#    .   .   rr_1u0p   1    
+     41    2   OR   .   1   1   11   11   GLN   HB3   H   .   .   .   1   1   12   12   ALA   H      H   .   .   .   .   .   2.78290   2.48290   3.08290   .   .   .   .   .   A   .   11   GLN   HB3   .   .   A   .   12   ALA   H      .   .   .   11   .   HB#    .   .   .   .   .   12   .   HN     .   .   rr_1u0p   1    
+     42    1   .    .   1   1   12   12   ALA   H     H   .   .   .   1   1   12   12   ALA   MB     H   .   .   .   .   .   3.17060   2.67060   3.67060   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   12   ALA   MB     .   .   .   12   .   HN     .   .   .   .   .   12   .   HB#    .   .   rr_1u0p   1    
+     43    1   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   22   22   LEU   HB2    H   .   .   .   .   .   3.23110   2.83110   3.53110   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   22   LEU   HB2    .   .   .   12   .   HN     .   .   .   .   .   22   .   HB#    .   .   rr_1u0p   1    
+     43    2   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   22   22   LEU   HB3    H   .   .   .   .   .   3.23110   2.83110   3.53110   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   22   LEU   HB3    .   .   .   12   .   HN     .   .   .   .   .   22   .   HB#    .   .   rr_1u0p   1    
+     44    1   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   22   22   LEU   MD1    H   .   .   .   .   .   2.69600   2.39600   4.39600   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   22   LEU   MD1    .   .   .   12   .   HN     .   .   .   .   .   22   .   HD##   .   .   rr_1u0p   1    
+     44    2   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   22   22   LEU   MD2    H   .   .   .   .   .   2.69600   2.39600   4.39600   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   22   LEU   MD2    .   .   .   12   .   HN     .   .   .   .   .   22   .   HD##   .   .   rr_1u0p   1    
+     45    1   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   23   23   LEU   HB2    H   .   .   .   .   .   2.43580   2.13580   2.73580   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   23   LEU   HB2    .   .   .   12   .   HN     .   .   .   .   .   23   .   HB#    .   .   rr_1u0p   1    
+     45    2   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   23   23   LEU   HB3    H   .   .   .   .   .   2.43580   2.13580   2.73580   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   23   LEU   HB3    .   .   .   12   .   HN     .   .   .   .   .   23   .   HB#    .   .   rr_1u0p   1    
+     46    1   OR   .   1   1   13   13   TYR   HA    H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   3.08310   2.78310   3.38310   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   13   TYR   HD1    .   .   .   13   .   HA     .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     46    2   OR   .   1   1   13   13   TYR   HA    H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   3.08310   2.78310   3.38310   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   13   TYR   HD2    .   .   .   13   .   HA     .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     47    1   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   13   TYR   HD2    .   .   .   13   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     47    2   OR   .   1   1   13   13   TYR   HB3   H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   13   TYR   HB3   .   .   A   .   13   TYR   HD1    .   .   .   13   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     47    3   OR   .   1   1   13   13   TYR   HD2   H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   13   TYR   HD2   .   .   A   .   13   TYR   HB3    .   .   .   13   .   HD#    .   .   .   .   .   13   .   HB#    .   .   rr_1u0p   1    
+     47    4   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   13   TYR   HD1    .   .   .   13   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     48    1   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   2.32000   2.02000   2.62000   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   13   TYR   HD2    .   .   .   13   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     48    2   OR   .   1   1   13   13   TYR   HB3   H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.32000   2.02000   2.62000   .   .   .   .   .   A   .   13   TYR   HB3   .   .   A   .   13   TYR   HD1    .   .   .   13   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     48    3   OR   .   1   1   13   13   TYR   HD2   H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   2.32000   2.02000   2.62000   .   .   .   .   .   A   .   13   TYR   HD2   .   .   A   .   13   TYR   HB3    .   .   .   13   .   HD#    .   .   .   .   .   13   .   HB#    .   .   rr_1u0p   1    
+     48    4   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.32000   2.02000   2.62000   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   13   TYR   HD1    .   .   .   13   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     49    1   OR   .   1   1   13   13   TYR   HB3   H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.47500   2.17500   2.77500   .   .   .   .   .   A   .   13   TYR   HB3   .   .   A   .   13   TYR   HD1    .   .   .   13   .   HB1    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     49    2   OR   .   1   1   13   13   TYR   HD2   H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   2.47500   2.17500   2.77500   .   .   .   .   .   A   .   13   TYR   HD2   .   .   A   .   13   TYR   HB3    .   .   .   13   .   HD#    .   .   .   .   .   13   .   HB1    .   .   rr_1u0p   1    
+     50    1   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.55600   2.25600   2.85600   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   13   TYR   HD1    .   .   .   13   .   HB2    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     50    2   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   2.55600   2.25600   2.85600   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   13   TYR   HD2    .   .   .   13   .   HB2    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     51    1   OR   .   1   1   20   20   TRP   HB2   H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.93500   2.63500   3.43500   .   .   .   .   .   A   .   20   TRP   HB2   .   .   A   .   13   TYR   HD1    .   .   .   20   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     51    2   OR   .   1   1   13   13   TYR   HD2   H   .   .   .   1   1   20   20   TRP   HB3    H   .   .   .   .   .   2.93500   2.63500   3.43500   .   .   .   .   .   A   .   13   TYR   HD2   .   .   A   .   20   TRP   HB3    .   .   .   13   .   HD#    .   .   .   .   .   20   .   HB#    .   .   rr_1u0p   1    
+     51    3   OR   .   1   1   20   20   TRP   HB2   H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   2.93500   2.63500   3.43500   .   .   .   .   .   A   .   20   TRP   HB2   .   .   A   .   13   TYR   HD2    .   .   .   20   .   HB#    .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     51    4   OR   .   1   1   13   13   TYR   HD1   H   .   .   .   1   1   20   20   TRP   HB3    H   .   .   .   .   .   2.93500   2.63500   3.43500   .   .   .   .   .   A   .   13   TYR   HD1   .   .   A   .   20   TRP   HB3    .   .   .   13   .   HD#    .   .   .   .   .   20   .   HB#    .   .   rr_1u0p   1    
+     52    1   OR   .   1   1   22   22   LEU   HA    H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   2.65090   2.35090   2.95090   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   13   TYR   HD1    .   .   .   22   .   HA     .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     52    2   OR   .   1   1   22   22   LEU   HA    H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   2.65090   2.35090   2.95090   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   13   TYR   HD2    .   .   .   22   .   HA     .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     53    1   OR   .   1   1   22   22   LEU   HA    H   .   .   .   1   1   13   13   TYR   HD1    H   .   .   .   .   .   3.26750   2.96750   3.56750   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   13   TYR   HD1    .   .   .   22   .   HA     .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     53    2   OR   .   1   1   22   22   LEU   HA    H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   3.26750   2.96750   3.56750   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   13   TYR   HD2    .   .   .   22   .   HA     .   .   .   .   .   13   .   HD#    .   .   rr_1u0p   1    
+     54    1   OR   .   1   1   13   13   TYR   QE    H   .   .   .   1   1   11   11   GLN   HB2    H   .   .   .   .   .   2.66800   2.36800   2.96800   .   .   .   .   .   A   .   13   TYR   QE    .   .   A   .   11   GLN   HB2    .   .   .   13   .   HE#    .   .   .   .   .   11   .   HB#    .   .   rr_1u0p   1    
+     54    2   OR   .   1   1   11   11   GLN   HB3   H   .   .   .   1   1   13   13   TYR   QE     H   .   .   .   .   .   2.66800   2.36800   2.96800   .   .   .   .   .   A   .   11   GLN   HB3   .   .   A   .   13   TYR   QE     .   .   .   11   .   HB#    .   .   .   .   .   13   .   HE#    .   .   rr_1u0p   1    
+     55    1   OR   .   1   1   13   13   TYR   QE    H   .   .   .   1   1   22   22   LEU   HB2    H   .   .   .   .   .   2.89700   2.59700   3.19700   .   .   .   .   .   A   .   13   TYR   QE    .   .   A   .   22   LEU   HB2    .   .   .   13   .   HE#    .   .   .   .   .   22   .   HB#    .   .   rr_1u0p   1    
+     55    2   OR   .   1   1   22   22   LEU   HB3   H   .   .   .   1   1   13   13   TYR   QE     H   .   .   .   .   .   2.89700   2.59700   3.19700   .   .   .   .   .   A   .   22   LEU   HB3   .   .   A   .   13   TYR   QE     .   .   .   22   .   HB#    .   .   .   .   .   13   .   HE#    .   .   rr_1u0p   1    
+     56    1   OR   .   1   1   13   13   TYR   QE    H   .   .   .   1   1   22   22   LEU   MD1    H   .   .   .   .   .   2.76000   2.46000   3.06000   .   .   .   .   .   A   .   13   TYR   QE    .   .   A   .   22   LEU   MD1    .   .   .   13   .   HE#    .   .   .   .   .   22   .   HD##   .   .   rr_1u0p   1    
+     56    2   OR   .   1   1   22   22   LEU   MD2   H   .   .   .   1   1   13   13   TYR   QE     H   .   .   .   .   .   2.76000   2.46000   3.06000   .   .   .   .   .   A   .   22   LEU   MD2   .   .   A   .   13   TYR   QE     .   .   .   22   .   HD##   .   .   .   .   .   13   .   HE#    .   .   rr_1u0p   1    
+     57    1   .    .   1   1   13   13   TYR   QE    H   .   .   .   1   1   22   22   LEU   HG     H   .   .   .   .   .   2.47070   2.17070   2.77070   .   .   .   .   .   A   .   13   TYR   QE    .   .   A   .   22   LEU   HG     .   .   .   13   .   HE#    .   .   .   .   .   22   .   HG     .   .   rr_1u0p   1    
+     58    1   .    .   1   1   13   13   TYR   H     H   .   .   .   1   1   12   12   ALA   HA     H   .   .   .   .   .   2.07009   1.77009   2.37009   .   .   .   .   .   A   .   13   TYR   H     .   .   A   .   12   ALA   HA     .   .   .   13   .   HN     .   .   .   .   .   12   .   HA     .   .   rr_1u0p   1    
+     59    1   .    .   1   1   13   13   TYR   H     H   .   .   .   1   1   12   12   ALA   HA     H   .   .   .   .   .   2.38392   2.08392   2.68392   .   .   .   .   .   A   .   13   TYR   H     .   .   A   .   12   ALA   HA     .   .   .   13   .   HN     .   .   .   .   .   12   .   HA     .   .   rr_1u0p   1    
+     60    1   .    .   1   1   12   12   ALA   MB    H   .   .   .   1   1   13   13   TYR   H      H   .   .   .   .   .   3.18990   2.88990   3.48990   .   .   .   .   .   A   .   12   ALA   MB    .   .   A   .   13   TYR   H      .   .   .   12   .   HB#    .   .   .   .   .   13   .   HN     .   .   rr_1u0p   1    
+     61    1   .    .   1   1   13   13   TYR   HA    H   .   .   .   1   1   13   13   TYR   H      H   .   .   .   .   .   2.76519   2.56519   2.96519   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   13   TYR   H      .   .   .   13   .   HA     .   .   .   .   .   13   .   HN     .   .   rr_1u0p   1    
+     62    1   .    .   1   1   13   13   TYR   H     H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   3.03020   2.73020   3.53020   .   .   .   .   .   A   .   13   TYR   H     .   .   A   .   13   TYR   HB3    .   .   .   13   .   HN     .   .   .   .   .   13   .   HB1    .   .   rr_1u0p   1    
+     63    1   .    .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   13   13   TYR   H      H   .   .   .   .   .   2.39850   2.09850   2.69850   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   13   TYR   H      .   .   .   13   .   HB2    .   .   .   .   .   13   .   HN     .   .   rr_1u0p   1    
+     64    1   .    .   1   1   13   13   TYR   H     H   .   .   .   1   1   13   13   TYR   HD2    H   .   .   .   .   .   2.99870   2.69870   3.29870   .   .   .   .   .   A   .   13   TYR   H     .   .   A   .   13   TYR   HD2    .   .   .   13   .   HN     .   .   .   .   .   13   .   HD2    .   .   rr_1u0p   1    
+     65    1   OR   .   1   1   13   13   TYR   H     H   .   .   .   1   1   22   22   LEU   HB2    H   .   .   .   .   .   3.34320   3.04320   3.64320   .   .   .   .   .   A   .   13   TYR   H     .   .   A   .   22   LEU   HB2    .   .   .   13   .   HN     .   .   .   .   .   22   .   HB#    .   .   rr_1u0p   1    
+     65    2   OR   .   1   1   22   22   LEU   HB3   H   .   .   .   1   1   13   13   TYR   H      H   .   .   .   .   .   3.34320   3.04320   3.64320   .   .   .   .   .   A   .   22   LEU   HB3   .   .   A   .   13   TYR   H      .   .   .   22   .   HB#    .   .   .   .   .   13   .   HN     .   .   rr_1u0p   1    
+     66    1   OR   .   1   1   13   13   TYR   H     H   .   .   .   1   1   22   22   LEU   MD1    H   .   .   .   .   .   3.50300   3.10300   4.30300   .   .   .   .   .   A   .   13   TYR   H     .   .   A   .   22   LEU   MD1    .   .   .   13   .   HN     .   .   .   .   .   22   .   HD##   .   .   rr_1u0p   1    
+     66    2   OR   .   1   1   22   22   LEU   MD2   H   .   .   .   1   1   13   13   TYR   H      H   .   .   .   .   .   3.50300   3.10300   4.30300   .   .   .   .   .   A   .   22   LEU   MD2   .   .   A   .   13   TYR   H      .   .   .   22   .   HD##   .   .   .   .   .   13   .   HN     .   .   rr_1u0p   1    
+     67    1   .    .   1   1   13   13   TYR   H     H   .   .   .   1   1   22   22   LEU   MD1    H   .   .   .   .   .   3.50800   3.20800   4.50800   .   .   .   .   .   A   .   13   TYR   H     .   .   A   .   22   LEU   MD1    .   .   .   13   .   HN     .   .   .   .   .   22   .   HD1#   .   .   rr_1u0p   1    
+     68    1   .    .   1   1   13   13   TYR   HA    H   .   .   .   1   1   14   14   VAL   H      H   .   .   .   .   .   2.19880   1.99880   2.49880   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   14   VAL   H      .   .   .   13   .   HA     .   .   .   .   .   14   .   HN     .   .   rr_1u0p   1    
+     69    1   .    .   1   1   13   13   TYR   HA    H   .   .   .   1   1   14   14   VAL   H      H   .   .   .   .   .   2.33067   2.03067   2.63067   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   14   VAL   H      .   .   .   13   .   HA     .   .   .   .   .   14   .   HN     .   .   rr_1u0p   1    
+     70    1   OR   .   1   1   14   14   VAL   H     H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   2.82780   2.52780   3.12780   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   13   TYR   HB3    .   .   .   14   .   HN     .   .   .   .   .   13   .   HB#    .   .   rr_1u0p   1    
+     70    2   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   14   14   VAL   H      H   .   .   .   .   .   2.82780   2.52780   3.12780   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   14   VAL   H      .   .   .   13   .   HB#    .   .   .   .   .   14   .   HN     .   .   rr_1u0p   1    
+     71    1   OR   .   1   1   14   14   VAL   H     H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   3.03190   2.83190   3.33190   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   13   TYR   HB3    .   .   .   14   .   HN     .   .   .   .   .   13   .   HB#    .   .   rr_1u0p   1    
+     71    2   OR   .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   14   14   VAL   H      H   .   .   .   .   .   3.03190   2.83190   3.33190   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   14   VAL   H      .   .   .   13   .   HB#    .   .   .   .   .   14   .   HN     .   .   rr_1u0p   1    
+     72    1   .    .   1   1   14   14   VAL   H     H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   3.38230   3.18230   3.58230   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   13   TYR   HB3    .   .   .   14   .   HN     .   .   .   .   .   13   .   HB1    .   .   rr_1u0p   1    
+     73    1   .    .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   HA     H   .   .   .   .   .   2.59173   2.29173   2.89173   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   HA     .   .   .   14   .   HN     .   .   .   .   .   14   .   HA     .   .   rr_1u0p   1    
+     74    1   .    .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   HA     H   .   .   .   .   .   2.67916   2.37916   2.97916   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   HA     .   .   .   14   .   HN     .   .   .   .   .   14   .   HA     .   .   rr_1u0p   1    
+     75    1   .    .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   HB     H   .   .   .   .   .   2.71216   2.41216   3.01216   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   HB     .   .   .   14   .   HN     .   .   .   .   .   14   .   HB     .   .   rr_1u0p   1    
+     76    1   .    .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   HB     H   .   .   .   .   .   3.23115   2.93115   3.53115   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   HB     .   .   .   14   .   HN     .   .   .   .   .   14   .   HB     .   .   rr_1u0p   1    
+     77    1   OR   .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   MG1    H   .   .   .   .   .   2.45300   2.15300   2.75300   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   MG1    .   .   .   14   .   HN     .   .   .   .   .   14   .   HG##   .   .   rr_1u0p   1    
+     77    2   OR   .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   MG2    H   .   .   .   .   .   2.45300   2.15300   2.75300   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   MG2    .   .   .   14   .   HN     .   .   .   .   .   14   .   HG##   .   .   rr_1u0p   1    
+     78    1   OR   .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   MG1    H   .   .   .   .   .   2.84500   2.54500   3.14500   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   MG1    .   .   .   14   .   HN     .   .   .   .   .   14   .   HG##   .   .   rr_1u0p   1    
+     78    2   OR   .   1   1   14   14   VAL   H     H   .   .   .   1   1   14   14   VAL   MG2    H   .   .   .   .   .   2.84500   2.54500   3.14500   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   14   VAL   MG2    .   .   .   14   .   HN     .   .   .   .   .   14   .   HG##   .   .   rr_1u0p   1    
+     79    1   .    .   1   1   14   14   VAL   HA    H   .   .   .   1   1   15   15   ARG   H      H   .   .   .   .   .   1.96760   1.66760   2.26760   .   .   .   .   .   A   .   14   VAL   HA    .   .   A   .   15   ARG   H      .   .   .   14   .   HA     .   .   .   .   .   15   .   HN     .   .   rr_1u0p   1    
+     80    1   .    .   1   1   14   14   VAL   HA    H   .   .   .   1   1   15   15   ARG   H      H   .   .   .   .   .   2.20879   1.90879   2.50879   .   .   .   .   .   A   .   14   VAL   HA    .   .   A   .   15   ARG   H      .   .   .   14   .   HA     .   .   .   .   .   15   .   HN     .   .   rr_1u0p   1    
+     81    1   .    .   1   1   14   14   VAL   HB    H   .   .   .   1   1   15   15   ARG   H      H   .   .   .   .   .   2.34364   2.04364   2.74364   .   .   .   .   .   A   .   14   VAL   HB    .   .   A   .   15   ARG   H      .   .   .   14   .   HB     .   .   .   .   .   15   .   HN     .   .   rr_1u0p   1    
+     82    1   .    .   1   1   14   14   VAL   HB    H   .   .   .   1   1   15   15   ARG   H      H   .   .   .   .   .   2.60341   2.30341   2.90341   .   .   .   .   .   A   .   14   VAL   HB    .   .   A   .   15   ARG   H      .   .   .   14   .   HB     .   .   .   .   .   15   .   HN     .   .   rr_1u0p   1    
+     83    1   OR   .   1   1   15   15   ARG   H     H   .   .   .   1   1   14   14   VAL   MG1    H   .   .   .   .   .   2.31600   2.01600   2.61600   .   .   .   .   .   A   .   15   ARG   H     .   .   A   .   14   VAL   MG1    .   .   .   15   .   HN     .   .   .   .   .   14   .   HG##   .   .   rr_1u0p   1    
+     83    2   OR   .   1   1   14   14   VAL   MG2   H   .   .   .   1   1   15   15   ARG   H      H   .   .   .   .   .   2.31600   2.01600   2.61600   .   .   .   .   .   A   .   14   VAL   MG2   .   .   A   .   15   ARG   H      .   .   .   14   .   HG##   .   .   .   .   .   15   .   HN     .   .   rr_1u0p   1    
+     84    1   .    .   1   1   15   15   ARG   H     H   .   .   .   1   1   15   15   ARG   HA     H   .   .   .   .   .   2.66733   2.46733   2.86733   .   .   .   .   .   A   .   15   ARG   H     .   .   A   .   15   ARG   HA     .   .   .   15   .   HN     .   .   .   .   .   15   .   HA     .   .   rr_1u0p   1    
+     85    1   .    .   1   1   15   15   ARG   H     H   .   .   .   1   1   15   15   ARG   HB2    H   .   .   .   .   .   2.34740   2.04740   2.64740   .   .   .   .   .   A   .   15   ARG   H     .   .   A   .   15   ARG   HB2    .   .   .   15   .   HN     .   .   .   .   .   15   .   HB2    .   .   rr_1u0p   1    
+     86    1   .    .   1   1   15   15   ARG   H     H   .   .   .   1   1   15   15   ARG   HB3    H   .   .   .   .   .   2.77910   2.47910   3.07910   .   .   .   .   .   A   .   15   ARG   H     .   .   A   .   15   ARG   HB3    .   .   .   15   .   HN     .   .   .   .   .   15   .   HB1    .   .   rr_1u0p   1    
+     87    1   OR   .   1   1   15   15   ARG   H     H   .   .   .   1   1   15   15   ARG   HG2    H   .   .   .   .   .   2.99390   2.69390   3.59390   .   .   .   .   .   A   .   15   ARG   H     .   .   A   .   15   ARG   HG2    .   .   .   15   .   HN     .   .   .   .   .   15   .   HG#    .   .   rr_1u0p   1    
+     87    2   OR   .   1   1   15   15   ARG   H     H   .   .   .   1   1   15   15   ARG   HG3    H   .   .   .   .   .   2.99390   2.69390   3.59390   .   .   .   .   .   A   .   15   ARG   H     .   .   A   .   15   ARG   HG3    .   .   .   15   .   HN     .   .   .   .   .   15   .   HG#    .   .   rr_1u0p   1    
+     88    1   .    .   1   1   14   14   VAL   HB    H   .   .   .   1   1   16   16   LYS   H      H   .   .   .   .   .   3.56431   3.26431   3.86431   .   .   .   .   .   A   .   14   VAL   HB    .   .   A   .   16   LYS   H      .   .   .   14   .   HB     .   .   .   .   .   16   .   HN     .   .   rr_1u0p   1    
+     89    1   .    .   1   1   15   15   ARG   HA    H   .   .   .   1   1   16   16   LYS   H      H   .   .   .   .   .   1.91770   1.71770   2.21770   .   .   .   .   .   A   .   15   ARG   HA    .   .   A   .   16   LYS   H      .   .   .   15   .   HA     .   .   .   .   .   16   .   HN     .   .   rr_1u0p   1    
+     90    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   15   15   ARG   HB3    H   .   .   .   .   .   2.68930   2.38930   3.68930   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   15   ARG   HB3    .   .   .   16   .   HN     .   .   .   .   .   15   .   HB#    .   .   rr_1u0p   1    
+     90    2   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   15   15   ARG   HB2    H   .   .   .   .   .   2.68930   2.38930   3.68930   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   15   ARG   HB2    .   .   .   16   .   HN     .   .   .   .   .   15   .   HB#    .   .   rr_1u0p   1    
+     91    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   15   15   ARG   HB3    H   .   .   .   .   .   3.38610   3.08610   3.88610   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   15   ARG   HB3    .   .   .   16   .   HN     .   .   .   .   .   15   .   HB#    .   .   rr_1u0p   1    
+     91    2   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   15   15   ARG   HB2    H   .   .   .   .   .   3.38610   3.08610   3.88610   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   15   ARG   HB2    .   .   .   16   .   HN     .   .   .   .   .   15   .   HB#    .   .   rr_1u0p   1    
+     92    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   15   15   ARG   HG2    H   .   .   .   .   .   2.95940   2.65940   3.35940   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   15   ARG   HG2    .   .   .   16   .   HN     .   .   .   .   .   15   .   HG#    .   .   rr_1u0p   1    
+     92    2   OR   .   1   1   15   15   ARG   HG3   H   .   .   .   1   1   16   16   LYS   H      H   .   .   .   .   .   2.95940   2.65940   3.35940   .   .   .   .   .   A   .   15   ARG   HG3   .   .   A   .   16   LYS   H      .   .   .   15   .   HG#    .   .   .   .   .   16   .   HN     .   .   rr_1u0p   1    
+     93    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   15   15   ARG   HG2    H   .   .   .   .   .   3.08310   2.78310   3.48310   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   15   ARG   HG2    .   .   .   16   .   HN     .   .   .   .   .   15   .   HG#    .   .   rr_1u0p   1    
+     93    2   OR   .   1   1   15   15   ARG   HG3   H   .   .   .   1   1   16   16   LYS   H      H   .   .   .   .   .   3.08310   2.78310   3.48310   .   .   .   .   .   A   .   15   ARG   HG3   .   .   A   .   16   LYS   H      .   .   .   15   .   HG#    .   .   .   .   .   16   .   HN     .   .   rr_1u0p   1    
+     94    1   .    .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HA     H   .   .   .   .   .   2.14298   1.84298   2.84298   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HA     .   .   .   16   .   HN     .   .   .   .   .   16   .   HA     .   .   rr_1u0p   1    
+     95    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HB3    H   .   .   .   .   .   2.66780   2.36780   2.96780   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HB3    .   .   .   16   .   HN     .   .   .   .   .   16   .   HB#    .   .   rr_1u0p   1    
+     95    2   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HB2    H   .   .   .   .   .   2.66780   2.36780   2.96780   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HB2    .   .   .   16   .   HN     .   .   .   .   .   16   .   HB#    .   .   rr_1u0p   1    
+     96    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HB3    H   .   .   .   .   .   2.87980   2.57980   3.17980   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HB3    .   .   .   16   .   HN     .   .   .   .   .   16   .   HB#    .   .   rr_1u0p   1    
+     96    2   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HB2    H   .   .   .   .   .   2.87980   2.57980   3.17980   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HB2    .   .   .   16   .   HN     .   .   .   .   .   16   .   HB#    .   .   rr_1u0p   1    
+     97    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HD2    H   .   .   .   .   .   3.05130   2.75130   3.35130   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HD2    .   .   .   16   .   HN     .   .   .   .   .   16   .   HD#    .   .   rr_1u0p   1    
+     97    2   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HD3    H   .   .   .   .   .   3.05130   2.75130   3.35130   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HD3    .   .   .   16   .   HN     .   .   .   .   .   16   .   HD#    .   .   rr_1u0p   1    
+     98    1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HG2    H   .   .   .   .   .   2.74140   2.44140   3.04140   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HG2    .   .   .   16   .   HN     .   .   .   .   .   16   .   HG#    .   .   rr_1u0p   1    
+     98    2   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   16   16   LYS   HG3    H   .   .   .   .   .   2.74140   2.44140   3.04140   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   16   LYS   HG3    .   .   .   16   .   HN     .   .   .   .   .   16   .   HG#    .   .   rr_1u0p   1    
+     99    1   .    .   1   1   16   16   LYS   H     H   .   .   .   1   1   19   19   GLU   H      H   .   .   .   .   .   3.09489   2.99489   3.34489   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   19   GLU   H      .   .   .   16   .   HN     .   .   .   .   .   19   .   HN     .   .   rr_1u0p   1    
+     100   1   .    .   1   1   16   16   LYS   H     H   .   .   .   1   1   20   20   TRP   HA     H   .   .   .   .   .   2.83921   2.53921   3.13921   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   20   TRP   HA     .   .   .   16   .   HN     .   .   .   .   .   20   .   HA     .   .   rr_1u0p   1    
+     101   1   .    .   1   1   16   16   LYS   H     H   .   .   .   1   1   20   20   TRP   HA     H   .   .   .   .   .   3.38237   3.08237   3.68237   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   20   TRP   HA     .   .   .   16   .   HN     .   .   .   .   .   20   .   HA     .   .   rr_1u0p   1    
+     102   1   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   21   21   VAL   MG1    H   .   .   .   .   .   2.72100   2.42100   3.02100   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   21   VAL   MG1    .   .   .   16   .   HN     .   .   .   .   .   21   .   HG##   .   .   rr_1u0p   1    
+     102   2   OR   .   1   1   16   16   LYS   H     H   .   .   .   1   1   21   21   VAL   MG2    H   .   .   .   .   .   2.72100   2.42100   3.02100   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   21   VAL   MG2    .   .   .   16   .   HN     .   .   .   .   .   21   .   HG##   .   .   rr_1u0p   1    
+     103   1   .    .   1   1   16   16   LYS   HA    H   .   .   .   1   1   17   17   ASP   H      H   .   .   .   .   .   2.06308   1.76308   2.56308   .   .   .   .   .   A   .   16   LYS   HA    .   .   A   .   17   ASP   H      .   .   .   16   .   HA     .   .   .   .   .   17   .   HN     .   .   rr_1u0p   1    
+     104   1   .    .   1   1   17   17   ASP   H     H   .   .   .   1   1   16   16   LYS   HB3    H   .   .   .   .   .   3.52320   3.12320   3.82320   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   16   LYS   HB3    .   .   .   17   .   HN     .   .   .   .   .   16   .   HB1    .   .   rr_1u0p   1    
+     105   1   .    .   1   1   16   16   LYS   HB2   H   .   .   .   1   1   17   17   ASP   H      H   .   .   .   .   .   3.34660   3.04660   3.64660   .   .   .   .   .   A   .   16   LYS   HB2   .   .   A   .   17   ASP   H      .   .   .   16   .   HB2    .   .   .   .   .   17   .   HN     .   .   rr_1u0p   1    
+     106   1   OR   .   1   1   17   17   ASP   H     H   .   .   .   1   1   16   16   LYS   HG2    H   .   .   .   .   .   3.40510   2.90510   4.40510   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   16   LYS   HG2    .   .   .   17   .   HN     .   .   .   .   .   16   .   HG#    .   .   rr_1u0p   1    
+     106   2   OR   .   1   1   16   16   LYS   HG3   H   .   .   .   1   1   17   17   ASP   H      H   .   .   .   .   .   3.40510   2.90510   4.40510   .   .   .   .   .   A   .   16   LYS   HG3   .   .   A   .   17   ASP   H      .   .   .   16   .   HG#    .   .   .   .   .   17   .   HN     .   .   rr_1u0p   1    
+     107   1   .    .   1   1   17   17   ASP   H     H   .   .   .   1   1   17   17   ASP   HA     H   .   .   .   .   .   2.14286   2.04286   2.44286   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   17   ASP   HA     .   .   .   17   .   HN     .   .   .   .   .   17   .   HA     .   .   rr_1u0p   1    
+     108   1   .    .   1   1   16   16   LYS   HA    H   .   .   .   1   1   17   17   ASP   H      H   .   .   .   .   .   2.14286   2.04286   2.44286   .   .   .   .   .   A   .   16   LYS   HA    .   .   A   .   17   ASP   H      .   .   .   16   .   HA     .   .   .   .   .   17   .   HN     .   .   rr_1u0p   1    
+     109   1   OR   .   1   1   17   17   ASP   H     H   .   .   .   1   1   17   17   ASP   HB3    H   .   .   .   .   .   2.68980   2.38980   2.98980   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   17   ASP   HB3    .   .   .   17   .   HN     .   .   .   .   .   17   .   HB#    .   .   rr_1u0p   1    
+     109   2   OR   .   1   1   17   17   ASP   H     H   .   .   .   1   1   17   17   ASP   HB2    H   .   .   .   .   .   2.68980   2.38980   2.98980   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   17   ASP   HB2    .   .   .   17   .   HN     .   .   .   .   .   17   .   HB#    .   .   rr_1u0p   1    
+     110   1   .    .   1   1   17   17   ASP   H     H   .   .   .   1   1   17   17   ASP   HB3    H   .   .   .   .   .   3.24480   3.04480   3.44480   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   17   ASP   HB3    .   .   .   17   .   HN     .   .   .   .   .   17   .   HB1    .   .   rr_1u0p   1    
+     111   1   .    .   1   1   17   17   ASP   H     H   .   .   .   1   1   17   17   ASP   HB2    H   .   .   .   .   .   3.24200   3.04200   3.44200   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   17   ASP   HB2    .   .   .   17   .   HN     .   .   .   .   .   17   .   HB2    .   .   rr_1u0p   1    
+     112   1   .    .   1   1   17   17   ASP   H     H   .   .   .   1   1   18   18   GLY   H      H   .   .   .   .   .   2.85306   2.35306   3.05306   .   .   .   .   .   A   .   17   ASP   H     .   .   A   .   18   GLY   H      .   .   .   17   .   HN     .   .   .   .   .   18   .   HN     .   .   rr_1u0p   1    
+     113   1   .    .   1   1   16   16   LYS   H     H   .   .   .   1   1   17   17   ASP   H      H   .   .   .   .   .   3.45000   3.05000   4.45000   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   17   ASP   H      .   .   .   16   .   HN     .   .   .   .   .   17   .   HN     .   .   rr_1u0p   1    
+     114   1   .    .   1   1   17   17   ASP   HA    H   .   .   .   1   1   18   18   GLY   H      H   .   .   .   .   .   2.95416   2.75416   3.15416   .   .   .   .   .   A   .   17   ASP   HA    .   .   A   .   18   GLY   H      .   .   .   17   .   HA     .   .   .   .   .   18   .   HN     .   .   rr_1u0p   1    
+     115   1   .    .   1   1   16   16   LYS   HA    H   .   .   .   1   1   18   18   GLY   H      H   .   .   .   .   .   2.62416   2.32416   3.32416   .   .   .   .   .   A   .   16   LYS   HA    .   .   A   .   18   GLY   H      .   .   .   16   .   HA     .   .   .   .   .   18   .   HN     .   .   rr_1u0p   1    
+     116   1   .    .   1   1   18   18   GLY   H     H   .   .   .   1   1   17   17   ASP   HB3    H   .   .   .   .   .   3.48060   3.28060   4.38060   .   .   .   .   .   A   .   18   GLY   H     .   .   A   .   17   ASP   HB3    .   .   .   18   .   HN     .   .   .   .   .   17   .   HB1    .   .   rr_1u0p   1    
+     117   1   .    .   1   1   17   17   ASP   HB2   H   .   .   .   1   1   18   18   GLY   H      H   .   .   .   .   .   3.55890   3.35890   4.45890   .   .   .   .   .   A   .   17   ASP   HB2   .   .   A   .   18   GLY   H      .   .   .   17   .   HB2    .   .   .   .   .   18   .   HN     .   .   rr_1u0p   1    
+     118   1   .    .   1   1   18   18   GLY   H     H   .   .   .   1   1   18   18   GLY   HA2    H   .   .   .   .   .   2.18930   2.08930   2.28930   .   .   .   .   .   A   .   18   GLY   H     .   .   A   .   18   GLY   HA2    .   .   .   18   .   HN     .   .   .   .   .   18   .   HA2    .   .   rr_1u0p   1    
+     119   1   .    .   1   1   18   18   GLY   H     H   .   .   .   1   1   18   18   GLY   HA3    H   .   .   .   .   .   2.69500   2.39500   2.99500   .   .   .   .   .   A   .   18   GLY   H     .   .   A   .   18   GLY   HA3    .   .   .   18   .   HN     .   .   .   .   .   18   .   HA1    .   .   rr_1u0p   1    
+     120   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   18   18   GLY   H      H   .   .   .   .   .   2.76803   2.66803   3.01803   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   18   GLY   H      .   .   .   19   .   HN     .   .   .   .   .   18   .   HN     .   .   rr_1u0p   1    
+     121   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   19   19   GLU   HA     H   .   .   .   .   .   2.42378   2.12378   2.72378   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   19   GLU   HA     .   .   .   19   .   HN     .   .   .   .   .   19   .   HA     .   .   rr_1u0p   1    
+     122   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   19   19   GLU   HB2    H   .   .   .   .   .   2.72400   2.42400   3.02400   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   19   GLU   HB2    .   .   .   19   .   HN     .   .   .   .   .   19   .   HB2    .   .   rr_1u0p   1    
+     123   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   19   19   GLU   HB3    H   .   .   .   .   .   3.50860   3.20860   3.80860   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   19   GLU   HB3    .   .   .   19   .   HN     .   .   .   .   .   19   .   HB1    .   .   rr_1u0p   1    
+     124   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   19   19   GLU   HG3    H   .   .   .   .   .   2.53130   2.23130   2.83130   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   19   GLU   HG3    .   .   .   19   .   HN     .   .   .   .   .   19   .   HG1    .   .   rr_1u0p   1    
+     125   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   19   19   GLU   HG2    H   .   .   .   .   .   3.23650   2.93650   3.53650   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   19   GLU   HG2    .   .   .   19   .   HN     .   .   .   .   .   19   .   HG2    .   .   rr_1u0p   1    
+     126   1   OR   .   1   1   20   20   TRP   HA    H   .   .   .   1   1   15   15   ARG   HB3    H   .   .   .   .   .   2.81220   2.51220   4.11220   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   15   ARG   HB3    .   .   .   20   .   HA     .   .   .   .   .   15   .   HB#    .   .   rr_1u0p   1    
+     126   2   OR   .   1   1   15   15   ARG   HB2   H   .   .   .   1   1   20   20   TRP   HA     H   .   .   .   .   .   2.81220   2.51220   4.11220   .   .   .   .   .   A   .   15   ARG   HB2   .   .   A   .   20   TRP   HA     .   .   .   15   .   HB#    .   .   .   .   .   20   .   HA     .   .   rr_1u0p   1    
+     127   1   OR   .   1   1   20   20   TRP   HD1   H   .   .   .   1   1   20   20   TRP   HB3    H   .   .   .   .   .   2.22800   1.92800   2.92800   .   .   .   .   .   A   .   20   TRP   HD1   .   .   A   .   20   TRP   HB3    .   .   .   20   .   HD1    .   .   .   .   .   20   .   HB#    .   .   rr_1u0p   1    
+     127   2   OR   .   1   1   20   20   TRP   HB2   H   .   .   .   1   1   20   20   TRP   HD1    H   .   .   .   .   .   2.22800   1.92800   2.92800   .   .   .   .   .   A   .   20   TRP   HB2   .   .   A   .   20   TRP   HD1    .   .   .   20   .   HB#    .   .   .   .   .   20   .   HD1    .   .   rr_1u0p   1    
+     128   1   .    .   1   1   20   20   TRP   HD1   H   .   .   .   1   1   20   20   TRP   H      H   .   .   .   .   .   3.04590   2.74590   3.34590   .   .   .   .   .   A   .   20   TRP   HD1   .   .   A   .   20   TRP   H      .   .   .   20   .   HD1    .   .   .   .   .   20   .   HN     .   .   rr_1u0p   1    
+     129   1   .    .   1   1   20   20   TRP   HE3   H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   2.21200   1.91200   2.51200   .   .   .   .   .   A   .   20   TRP   HE3   .   .   A   .   13   TYR   HB3    .   .   .   20   .   HE3    .   .   .   .   .   13   .   HB1    .   .   rr_1u0p   1    
+     130   1   .    .   1   1   20   20   TRP   HE3   H   .   .   .   1   1   13   13   TYR   HB3    H   .   .   .   .   .   3.02300   2.72300   3.32300   .   .   .   .   .   A   .   20   TRP   HE3   .   .   A   .   13   TYR   HB3    .   .   .   20   .   HE3    .   .   .   .   .   13   .   HB1    .   .   rr_1u0p   1    
+     131   1   .    .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   2.81000   2.51000   3.11000   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   20   TRP   HE3    .   .   .   13   .   HB2    .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     132   1   .    .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   2.57200   2.27200   2.87200   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   20   TRP   HE3    .   .   .   13   .   HB2    .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     133   1   .    .   1   1   14   14   VAL   H     H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   3.50860   3.20860   3.80860   .   .   .   .   .   A   .   14   VAL   H     .   .   A   .   20   TRP   HE3    .   .   .   14   .   HN     .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     134   1   .    .   1   1   15   15   ARG   HA    H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   2.76410   2.46410   3.06410   .   .   .   .   .   A   .   15   ARG   HA    .   .   A   .   20   TRP   HE3    .   .   .   15   .   HA     .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     135   1   OR   .   1   1   20   20   TRP   HE3   H   .   .   .   1   1   15   15   ARG   HG2    H   .   .   .   .   .   2.81200   2.51200   3.11200   .   .   .   .   .   A   .   20   TRP   HE3   .   .   A   .   15   ARG   HG2    .   .   .   20   .   HE3    .   .   .   .   .   15   .   HG#    .   .   rr_1u0p   1    
+     135   2   OR   .   1   1   15   15   ARG   HG3   H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   2.81200   2.51200   3.11200   .   .   .   .   .   A   .   15   ARG   HG3   .   .   A   .   20   TRP   HE3    .   .   .   15   .   HG#    .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     136   1   .    .   1   1   16   16   LYS   H     H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   3.58610   3.28610   4.58610   .   .   .   .   .   A   .   16   LYS   H     .   .   A   .   20   TRP   HE3    .   .   .   16   .   HN     .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     137   1   .    .   1   1   20   20   TRP   HA    H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   2.36880   2.06880   2.66880   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   20   TRP   HE3    .   .   .   20   .   HA     .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     138   1   .    .   1   1   20   20   TRP   HA    H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   2.67440   2.37440   2.97440   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   20   TRP   HE3    .   .   .   20   .   HA     .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     139   1   OR   .   1   1   20   20   TRP   HE3   H   .   .   .   1   1   20   20   TRP   HB3    H   .   .   .   .   .   2.67800   2.37800   2.97800   .   .   .   .   .   A   .   20   TRP   HE3   .   .   A   .   20   TRP   HB3    .   .   .   20   .   HE3    .   .   .   .   .   20   .   HB#    .   .   rr_1u0p   1    
+     139   2   OR   .   1   1   20   20   TRP   HB2   H   .   .   .   1   1   20   20   TRP   HE3    H   .   .   .   .   .   2.67800   2.37800   2.97800   .   .   .   .   .   A   .   20   TRP   HB2   .   .   A   .   20   TRP   HE3    .   .   .   20   .   HB#    .   .   .   .   .   20   .   HE3    .   .   rr_1u0p   1    
+     140   1   .    .   1   1   20   20   TRP   HE3   H   .   .   .   1   1   21   21   VAL   H      H   .   .   .   .   .   3.37500   3.07500   3.67500   .   .   .   .   .   A   .   20   TRP   HE3   .   .   A   .   21   VAL   H      .   .   .   20   .   HE3    .   .   .   .   .   21   .   HN     .   .   rr_1u0p   1    
+     141   1   .    .   1   1   19   19   GLU   HA    H   .   .   .   1   1   20   20   TRP   H      H   .   .   .   .   .   2.27080   1.97080   2.57080   .   .   .   .   .   A   .   19   GLU   HA    .   .   A   .   20   TRP   H      .   .   .   19   .   HA     .   .   .   .   .   20   .   HN     .   .   rr_1u0p   1    
+     142   1   OR   .   1   1   20   20   TRP   H     H   .   .   .   1   1   19   19   GLU   HB2    H   .   .   .   .   .   2.61010   2.31010   2.91010   .   .   .   .   .   A   .   20   TRP   H     .   .   A   .   19   GLU   HB2    .   .   .   20   .   HN     .   .   .   .   .   19   .   HB#    .   .   rr_1u0p   1    
+     142   2   OR   .   1   1   20   20   TRP   H     H   .   .   .   1   1   19   19   GLU   HB3    H   .   .   .   .   .   2.61010   2.31010   2.91010   .   .   .   .   .   A   .   20   TRP   H     .   .   A   .   19   GLU   HB3    .   .   .   20   .   HN     .   .   .   .   .   19   .   HB#    .   .   rr_1u0p   1    
+     143   1   OR   .   1   1   20   20   TRP   H     H   .   .   .   1   1   19   19   GLU   HG2    H   .   .   .   .   .   3.45410   3.15410   3.75410   .   .   .   .   .   A   .   20   TRP   H     .   .   A   .   19   GLU   HG2    .   .   .   20   .   HN     .   .   .   .   .   19   .   HG#    .   .   rr_1u0p   1    
+     143   2   OR   .   1   1   20   20   TRP   H     H   .   .   .   1   1   19   19   GLU   HG3    H   .   .   .   .   .   3.45410   3.15410   3.75410   .   .   .   .   .   A   .   20   TRP   H     .   .   A   .   19   GLU   HG3    .   .   .   20   .   HN     .   .   .   .   .   19   .   HG#    .   .   rr_1u0p   1    
+     144   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   20   20   TRP   H      H   .   .   .   .   .   3.44990   3.04990   4.24990   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   20   TRP   H      .   .   .   19   .   HN     .   .   .   .   .   20   .   HN     .   .   rr_1u0p   1    
+     145   1   .    .   1   1   20   20   TRP   HA    H   .   .   .   1   1   20   20   TRP   H      H   .   .   .   .   .   2.33342   2.03342   2.73342   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   20   TRP   H      .   .   .   20   .   HA     .   .   .   .   .   20   .   HN     .   .   rr_1u0p   1    
+     146   1   .    .   1   1   20   20   TRP   HA    H   .   .   .   1   1   20   20   TRP   H      H   .   .   .   .   .   2.63489   2.33489   2.93489   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   20   TRP   H      .   .   .   20   .   HA     .   .   .   .   .   20   .   HN     .   .   rr_1u0p   1    
+     147   1   .    .   1   1   20   20   TRP   HB2   H   .   .   .   1   1   20   20   TRP   H      H   .   .   .   .   .   2.33340   2.03340   2.63340   .   .   .   .   .   A   .   20   TRP   HB2   .   .   A   .   20   TRP   H      .   .   .   20   .   HB2    .   .   .   .   .   20   .   HN     .   .   rr_1u0p   1    
+     148   1   .    .   1   1   20   20   TRP   H     H   .   .   .   1   1   20   20   TRP   HB3    H   .   .   .   .   .   3.10290   2.70290   3.50290   .   .   .   .   .   A   .   20   TRP   H     .   .   A   .   20   TRP   HB3    .   .   .   20   .   HN     .   .   .   .   .   20   .   HB1    .   .   rr_1u0p   1    
+     149   1   .    .   1   1   13   13   TYR   HB2   H   .   .   .   1   1   20   20   TRP   HZ3    H   .   .   .   .   .   3.37800   3.07800   3.97800   .   .   .   .   .   A   .   13   TYR   HB2   .   .   A   .   20   TRP   HZ3    .   .   .   13   .   HB2    .   .   .   .   .   20   .   HZ3    .   .   rr_1u0p   1    
+     150   1   .    .   1   1   14   14   VAL   HA    H   .   .   .   1   1   20   20   TRP   HZ3    H   .   .   .   .   .   3.13220   2.83220   3.43220   .   .   .   .   .   A   .   14   VAL   HA    .   .   A   .   20   TRP   HZ3    .   .   .   14   .   HA     .   .   .   .   .   20   .   HZ3    .   .   rr_1u0p   1    
+     151   1   OR   .   1   1   20   20   TRP   HZ3   H   .   .   .   1   1   15   15   ARG   HB3    H   .   .   .   .   .   3.34300   3.04300   3.64300   .   .   .   .   .   A   .   20   TRP   HZ3   .   .   A   .   15   ARG   HB3    .   .   .   20   .   HZ3    .   .   .   .   .   15   .   HB#    .   .   rr_1u0p   1    
+     151   2   OR   .   1   1   15   15   ARG   HB2   H   .   .   .   1   1   20   20   TRP   HZ3    H   .   .   .   .   .   3.34300   3.04300   3.64300   .   .   .   .   .   A   .   15   ARG   HB2   .   .   A   .   20   TRP   HZ3    .   .   .   15   .   HB#    .   .   .   .   .   20   .   HZ3    .   .   rr_1u0p   1    
+     152   1   OR   .   1   1   20   20   TRP   HZ3   H   .   .   .   1   1   15   15   ARG   HG2    H   .   .   .   .   .   3.15200   2.85200   3.45200   .   .   .   .   .   A   .   20   TRP   HZ3   .   .   A   .   15   ARG   HG2    .   .   .   20   .   HZ3    .   .   .   .   .   15   .   HG#    .   .   rr_1u0p   1    
+     152   2   OR   .   1   1   15   15   ARG   HG3   H   .   .   .   1   1   20   20   TRP   HZ3    H   .   .   .   .   .   3.15200   2.85200   3.45200   .   .   .   .   .   A   .   15   ARG   HG3   .   .   A   .   20   TRP   HZ3    .   .   .   15   .   HG#    .   .   .   .   .   20   .   HZ3    .   .   rr_1u0p   1    
+     153   1   .    .   1   1   20   20   TRP   HA    H   .   .   .   1   1   20   20   TRP   HZ3    H   .   .   .   .   .   3.48520   3.18520   4.28520   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   20   TRP   HZ3    .   .   .   20   .   HA     .   .   .   .   .   20   .   HZ3    .   .   rr_1u0p   1    
+     154   1   OR   .   1   1   21   21   VAL   H     H   .   .   .   1   1   16   16   LYS   HG2    H   .   .   .   .   .   3.40510   3.10510   3.70510   .   .   .   .   .   A   .   21   VAL   H     .   .   A   .   16   LYS   HG2    .   .   .   21   .   HN     .   .   .   .   .   16   .   HG#    .   .   rr_1u0p   1    
+     154   2   OR   .   1   1   16   16   LYS   HG3   H   .   .   .   1   1   21   21   VAL   H      H   .   .   .   .   .   3.40510   3.10510   3.70510   .   .   .   .   .   A   .   16   LYS   HG3   .   .   A   .   21   VAL   H      .   .   .   16   .   HG#    .   .   .   .   .   21   .   HN     .   .   rr_1u0p   1    
+     155   1   .    .   1   1   20   20   TRP   HA    H   .   .   .   1   1   21   21   VAL   H      H   .   .   .   .   .   2.20486   1.90486   2.50486   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   21   VAL   H      .   .   .   20   .   HA     .   .   .   .   .   21   .   HN     .   .   rr_1u0p   1    
+     156   1   .    .   1   1   20   20   TRP   HA    H   .   .   .   1   1   21   21   VAL   H      H   .   .   .   .   .   2.35331   2.05331   2.65331   .   .   .   .   .   A   .   20   TRP   HA    .   .   A   .   21   VAL   H      .   .   .   20   .   HA     .   .   .   .   .   21   .   HN     .   .   rr_1u0p   1    
+     157   1   OR   .   1   1   21   21   VAL   H     H   .   .   .   1   1   20   20   TRP   HB3    H   .   .   .   .   .   3.25030   2.95030   3.55030   .   .   .   .   .   A   .   21   VAL   H     .   .   A   .   20   TRP   HB3    .   .   .   21   .   HN     .   .   .   .   .   20   .   HB#    .   .   rr_1u0p   1    
+     157   2   OR   .   1   1   20   20   TRP   HB2   H   .   .   .   1   1   21   21   VAL   H      H   .   .   .   .   .   3.25030   2.95030   3.55030   .   .   .   .   .   A   .   20   TRP   HB2   .   .   A   .   21   VAL   H      .   .   .   20   .   HB#    .   .   .   .   .   21   .   HN     .   .   rr_1u0p   1    
+     158   1   .    .   1   1   21   21   VAL   H     H   .   .   .   1   1   21   21   VAL   HA     H   .   .   .   .   .   2.35124   2.05124   2.85124   .   .   .   .   .   A   .   21   VAL   H     .   .   A   .   21   VAL   HA     .   .   .   21   .   HN     .   .   .   .   .   21   .   HA     .   .   rr_1u0p   1    
+     159   1   .    .   1   1   21   21   VAL   H     H   .   .   .   1   1   21   21   VAL   HA     H   .   .   .   .   .   2.83758   2.53758   3.13758   .   .   .   .   .   A   .   21   VAL   H     .   .   A   .   21   VAL   HA     .   .   .   21   .   HN     .   .   .   .   .   21   .   HA     .   .   rr_1u0p   1    
+     160   1   .    .   1   1   21   21   VAL   H     H   .   .   .   1   1   21   21   VAL   HB     H   .   .   .   .   .   3.09890   2.79890   3.39890   .   .   .   .   .   A   .   21   VAL   H     .   .   A   .   21   VAL   HB     .   .   .   21   .   HN     .   .   .   .   .   21   .   HB     .   .   rr_1u0p   1    
+     161   1   OR   .   1   1   21   21   VAL   H     H   .   .   .   1   1   21   21   VAL   MG1    H   .   .   .   .   .   2.43500   2.13500   2.73500   .   .   .   .   .   A   .   21   VAL   H     .   .   A   .   21   VAL   MG1    .   .   .   21   .   HN     .   .   .   .   .   21   .   HG##   .   .   rr_1u0p   1    
+     161   2   OR   .   1   1   21   21   VAL   MG2   H   .   .   .   1   1   21   21   VAL   H      H   .   .   .   .   .   2.43500   2.13500   2.73500   .   .   .   .   .   A   .   21   VAL   MG2   .   .   A   .   21   VAL   H      .   .   .   21   .   HG##   .   .   .   .   .   21   .   HN     .   .   rr_1u0p   1    
+     162   1   OR   .   1   1   21   21   VAL   H     H   .   .   .   1   1   21   21   VAL   MG1    H   .   .   .   .   .   2.81100   2.51100   3.11100   .   .   .   .   .   A   .   21   VAL   H     .   .   A   .   21   VAL   MG1    .   .   .   21   .   HN     .   .   .   .   .   21   .   HG##   .   .   rr_1u0p   1    
+     162   2   OR   .   1   1   21   21   VAL   MG2   H   .   .   .   1   1   21   21   VAL   H      H   .   .   .   .   .   2.81100   2.51100   3.11100   .   .   .   .   .   A   .   21   VAL   MG2   .   .   A   .   21   VAL   H      .   .   .   21   .   HG##   .   .   .   .   .   21   .   HN     .   .   rr_1u0p   1    
+     163   1   .    .   1   1   13   13   TYR   HA    H   .   .   .   1   1   22   22   LEU   HA     H   .   .   .   .   .   2.33519   2.03519   2.63519   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   22   LEU   HA     .   .   .   13   .   HA     .   .   .   .   .   22   .   HA     .   .   rr_1u0p   1    
+     164   1   .    .   1   1   22   22   LEU   MD2   H   .   .   .   1   1   13   13   TYR   QE     H   .   .   .   .   .   3.53000   3.23000   4.43000   .   .   .   .   .   A   .   22   LEU   MD2   .   .   A   .   13   TYR   QE     .   .   .   22   .   HD2#   .   .   .   .   .   13   .   HE#    .   .   rr_1u0p   1    
+     165   1   .    .   1   1   13   13   TYR   QE    H   .   .   .   1   1   22   22   LEU   MD1    H   .   .   .   .   .   3.18000   2.88000   3.58000   .   .   .   .   .   A   .   13   TYR   QE    .   .   A   .   22   LEU   MD1    .   .   .   13   .   HE#    .   .   .   .   .   22   .   HD1#   .   .   rr_1u0p   1    
+     166   1   .    .   1   1   13   13   TYR   QE    H   .   .   .   1   1   22   22   LEU   HG     H   .   .   .   .   .   3.02000   2.72000   3.32000   .   .   .   .   .   A   .   13   TYR   QE    .   .   A   .   22   LEU   HG     .   .   .   13   .   HE#    .   .   .   .   .   22   .   HG     .   .   rr_1u0p   1    
+     167   1   .    .   1   1   21   21   VAL   HA    H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   1.91770   1.61770   2.21770   .   .   .   .   .   A   .   21   VAL   HA    .   .   A   .   22   LEU   H      .   .   .   21   .   HA     .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     168   1   .    .   1   1   21   21   VAL   HA    H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   2.19054   1.89054   2.49054   .   .   .   .   .   A   .   21   VAL   HA    .   .   A   .   22   LEU   H      .   .   .   21   .   HA     .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     169   1   .    .   1   1   21   21   VAL   HB    H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   2.85081   2.55081   3.25081   .   .   .   .   .   A   .   21   VAL   HB    .   .   A   .   22   LEU   H      .   .   .   21   .   HB     .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     170   1   OR   .   1   1   22   22   LEU   H     H   .   .   .   1   1   21   21   VAL   MG1    H   .   .   .   .   .   2.46400   2.16400   2.76400   .   .   .   .   .   A   .   22   LEU   H     .   .   A   .   21   VAL   MG1    .   .   .   22   .   HN     .   .   .   .   .   21   .   HG##   .   .   rr_1u0p   1    
+     170   2   OR   .   1   1   21   21   VAL   MG2   H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   2.46400   2.16400   2.76400   .   .   .   .   .   A   .   21   VAL   MG2   .   .   A   .   22   LEU   H      .   .   .   21   .   HG##   .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     171   1   .    .   1   1   22   22   LEU   H     H   .   .   .   1   1   21   21   VAL   MG1    H   .   .   .   .   .   3.01000   2.71000   3.31000   .   .   .   .   .   A   .   22   LEU   H     .   .   A   .   21   VAL   MG1    .   .   .   22   .   HN     .   .   .   .   .   21   .   HG1#   .   .   rr_1u0p   1    
+     172   1   .    .   1   1   22   22   LEU   HA    H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   2.59058   2.29058   2.89058   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   22   LEU   H      .   .   .   22   .   HA     .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     173   1   .    .   1   1   22   22   LEU   HA    H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   2.61014   2.31014   2.91014   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   22   LEU   H      .   .   .   22   .   HA     .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     174   1   .    .   1   1   22   22   LEU   HB3   H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   2.31480   2.01480   3.31480   .   .   .   .   .   A   .   22   LEU   HB3   .   .   A   .   22   LEU   H      .   .   .   22   .   HB1    .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     175   1   .    .   1   1   22   22   LEU   H     H   .   .   .   1   1   22   22   LEU   HB2    H   .   .   .   .   .   2.66730   2.36730   3.26730   .   .   .   .   .   A   .   22   LEU   H     .   .   A   .   22   LEU   HB2    .   .   .   22   .   HN     .   .   .   .   .   22   .   HB2    .   .   rr_1u0p   1    
+     176   1   .    .   1   1   22   22   LEU   HG    H   .   .   .   1   1   22   22   LEU   H      H   .   .   .   .   .   2.54028   2.14028   3.44028   .   .   .   .   .   A   .   22   LEU   HG    .   .   A   .   22   LEU   H      .   .   .   22   .   HG     .   .   .   .   .   22   .   HN     .   .   rr_1u0p   1    
+     177   1   .    .   1   1   13   13   TYR   HA    H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   2.86137   2.56137   3.36137   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   23   LEU   H      .   .   .   13   .   HA     .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     178   1   .    .   1   1   13   13   TYR   HA    H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   2.99714   2.69714   3.29714   .   .   .   .   .   A   .   13   TYR   HA    .   .   A   .   23   LEU   H      .   .   .   13   .   HA     .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     179   1   .    .   1   1   22   22   LEU   HA    H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   1.92518   1.62518   2.22518   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   23   LEU   H      .   .   .   22   .   HA     .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     180   1   .    .   1   1   22   22   LEU   HA    H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   2.19411   1.89411   2.49411   .   .   .   .   .   A   .   22   LEU   HA    .   .   A   .   23   LEU   H      .   .   .   22   .   HA     .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     181   1   .    .   1   1   23   23   LEU   H     H   .   .   .   1   1   22   22   LEU   MD1    H   .   .   .   .   .   3.15900   2.85900   4.05900   .   .   .   .   .   A   .   23   LEU   H     .   .   A   .   22   LEU   MD1    .   .   .   23   .   HN     .   .   .   .   .   22   .   HD1#   .   .   rr_1u0p   1    
+     182   1   .    .   1   1   22   22   LEU   MD2   H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   3.22000   2.82000   4.22000   .   .   .   .   .   A   .   22   LEU   MD2   .   .   A   .   23   LEU   H      .   .   .   22   .   HD2#   .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     183   1   .    .   1   1   23   23   LEU   H     H   .   .   .   1   1   23   23   LEU   HA     H   .   .   .   .   .   2.67016   2.37016   2.97016   .   .   .   .   .   A   .   23   LEU   H     .   .   A   .   23   LEU   HA     .   .   .   23   .   HN     .   .   .   .   .   23   .   HA     .   .   rr_1u0p   1    
+     184   1   .    .   1   1   12   12   ALA   MB    H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   3.22000   2.82000   4.22000   .   .   .   .   .   A   .   12   ALA   MB    .   .   A   .   23   LEU   H      .   .   .   12   .   HB#    .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     185   1   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   23   23   LEU   MD1    H   .   .   .   .   .   3.52000   3.12000   4.52000   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   23   LEU   MD1    .   .   .   12   .   HN     .   .   .   .   .   23   .   HD##   .   .   rr_1u0p   1    
+     185   2   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   23   23   LEU   MD2    H   .   .   .   .   .   3.52000   3.12000   4.52000   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   23   LEU   MD2    .   .   .   12   .   HN     .   .   .   .   .   23   .   HD##   .   .   rr_1u0p   1    
+     186   1   OR   .   1   1   23   23   LEU   H     H   .   .   .   1   1   23   23   LEU   HB2    H   .   .   .   .   .   2.15090   1.85090   2.45090   .   .   .   .   .   A   .   23   LEU   H     .   .   A   .   23   LEU   HB2    .   .   .   23   .   HN     .   .   .   .   .   23   .   HB#    .   .   rr_1u0p   1    
+     186   2   OR   .   1   1   23   23   LEU   HB3   H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   2.15090   1.85090   2.45090   .   .   .   .   .   A   .   23   LEU   HB3   .   .   A   .   23   LEU   H      .   .   .   23   .   HB#    .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     187   1   OR   .   1   1   23   23   LEU   H     H   .   .   .   1   1   23   23   LEU   HB2    H   .   .   .   .   .   2.53680   2.23680   2.83680   .   .   .   .   .   A   .   23   LEU   H     .   .   A   .   23   LEU   HB2    .   .   .   23   .   HN     .   .   .   .   .   23   .   HB#    .   .   rr_1u0p   1    
+     187   2   OR   .   1   1   23   23   LEU   HB3   H   .   .   .   1   1   23   23   LEU   H      H   .   .   .   .   .   2.53680   2.23680   2.83680   .   .   .   .   .   A   .   23   LEU   HB3   .   .   A   .   23   LEU   H      .   .   .   23   .   HB#    .   .   .   .   .   23   .   HN     .   .   rr_1u0p   1    
+     188   1   OR   .   1   1   23   23   LEU   H     H   .   .   .   1   1   23   23   LEU   MD1    H   .   .   .   .   .   2.88000   2.58000   3.18000   .   .   .   .   .   A   .   23   LEU   H     .   .   A   .   23   LEU   MD1    .   .   .   23   .   HN     .   .   .   .   .   23   .   HD##   .   .   rr_1u0p   1    
+     188   2   OR   .   1   1   23   23   LEU   H     H   .   .   .   1   1   23   23   LEU   MD2    H   .   .   .   .   .   2.88000   2.58000   3.18000   .   .   .   .   .   A   .   23   LEU   H     .   .   A   .   23   LEU   MD2    .   .   .   23   .   HN     .   .   .   .   .   23   .   HD##   .   .   rr_1u0p   1    
+     189   1   .    .   1   1   23   23   LEU   HA    H   .   .   .   1   1   24   24   SER   H      H   .   .   .   .   .   2.95998   2.65998   3.15998   .   .   .   .   .   A   .   23   LEU   HA    .   .   A   .   24   SER   H      .   .   .   23   .   HA     .   .   .   .   .   24   .   HN     .   .   rr_1u0p   1    
+     190   1   OR   .   1   1   24   24   SER   H     H   .   .   .   1   1   24   24   SER   HB2    H   .   .   .   .   .   2.33800   2.03800   2.63800   .   .   .   .   .   A   .   24   SER   H     .   .   A   .   24   SER   HB2    .   .   .   24   .   HN     .   .   .   .   .   24   .   HB#    .   .   rr_1u0p   1    
+     190   2   OR   .   1   1   24   24   SER   H     H   .   .   .   1   1   24   24   SER   HB3    H   .   .   .   .   .   2.33800   2.03800   2.63800   .   .   .   .   .   A   .   24   SER   H     .   .   A   .   24   SER   HB3    .   .   .   24   .   HN     .   .   .   .   .   24   .   HB#    .   .   rr_1u0p   1    
+     191   1   OR   .   1   1   24   24   SER   H     H   .   .   .   1   1   24   24   SER   HB2    H   .   .   .   .   .   2.48890   2.18890   2.78890   .   .   .   .   .   A   .   24   SER   H     .   .   A   .   24   SER   HB2    .   .   .   24   .   HN     .   .   .   .   .   24   .   HB#    .   .   rr_1u0p   1    
+     191   2   OR   .   1   1   24   24   SER   H     H   .   .   .   1   1   24   24   SER   HB3    H   .   .   .   .   .   2.48890   2.18890   2.78890   .   .   .   .   .   A   .   24   SER   H     .   .   A   .   24   SER   HB3    .   .   .   24   .   HN     .   .   .   .   .   24   .   HB#    .   .   rr_1u0p   1    
+     192   1   .    .   1   1   25   25   THR   H     H   .   .   .   1   1   25   25   THR   HA     H   .   .   .   .   .   2.61415   2.31415   2.91415   .   .   .   .   .   A   .   25   THR   H     .   .   A   .   25   THR   HA     .   .   .   25   .   HN     .   .   .   .   .   25   .   HA     .   .   rr_1u0p   1    
+     193   1   .    .   1   1   25   25   THR   H     H   .   .   .   1   1   25   25   THR   HB     H   .   .   .   .   .   2.71210   2.41210   3.01210   .   .   .   .   .   A   .   25   THR   H     .   .   A   .   25   THR   HB     .   .   .   25   .   HN     .   .   .   .   .   25   .   HB#    .   .   rr_1u0p   1    
+     194   1   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   26   26   PHE   HB2    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   26   PHE   HB2    .   .   .   26   .   HD#    .   .   .   .   .   26   .   HB#    .   .   rr_1u0p   1    
+     194   2   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   26   26   PHE   HB3    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   26   PHE   HB3    .   .   .   26   .   HD#    .   .   .   .   .   26   .   HB#    .   .   rr_1u0p   1    
+     195   1   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   26   26   PHE   HB2    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   26   PHE   HB2    .   .   .   26   .   HD#    .   .   .   .   .   26   .   HB#    .   .   rr_1u0p   1    
+     195   2   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   26   26   PHE   HB3    H   .   .   .   .   .   2.21500   1.91500   2.51500   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   26   PHE   HB3    .   .   .   26   .   HD#    .   .   .   .   .   26   .   HB#    .   .   rr_1u0p   1    
+     196   1   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   27   27   LEU   HB2    H   .   .   .   .   .   2.92700   2.62700   3.22700   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   27   LEU   HB2    .   .   .   26   .   HD#    .   .   .   .   .   27   .   HB#    .   .   rr_1u0p   1    
+     196   2   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   27   27   LEU   HB3    H   .   .   .   .   .   2.92700   2.62700   3.22700   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   27   LEU   HB3    .   .   .   26   .   HD#    .   .   .   .   .   27   .   HB#    .   .   rr_1u0p   1    
+     197   1   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   27   27   LEU   MD1    H   .   .   .   .   .   3.21000   2.91000   3.51000   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   27   LEU   MD1    .   .   .   26   .   HD#    .   .   .   .   .   27   .   HD##   .   .   rr_1u0p   1    
+     197   2   OR   .   1   1   26   26   PHE   QD    H   .   .   .   1   1   27   27   LEU   MD2    H   .   .   .   .   .   3.21000   2.91000   3.51000   .   .   .   .   .   A   .   26   PHE   QD    .   .   A   .   27   LEU   MD2    .   .   .   26   .   HD#    .   .   .   .   .   27   .   HD##   .   .   rr_1u0p   1    
+     198   1   OR   .   1   1   26   26   PHE   H     H   .   .   .   1   1   26   26   PHE   HB2    H   .   .   .   .   .   2.37710   2.07710   2.67710   .   .   .   .   .   A   .   26   PHE   H     .   .   A   .   26   PHE   HB2    .   .   .   26   .   HN     .   .   .   .   .   26   .   HB#    .   .   rr_1u0p   1    
+     198   2   OR   .   1   1   26   26   PHE   HB3   H   .   .   .   1   1   26   26   PHE   H      H   .   .   .   .   .   2.37710   2.07710   2.67710   .   .   .   .   .   A   .   26   PHE   HB3   .   .   A   .   26   PHE   H      .   .   .   26   .   HB#    .   .   .   .   .   26   .   HN     .   .   rr_1u0p   1    
+     199   1   OR   .   1   1   27   27   LEU   H     H   .   .   .   1   1   27   27   LEU   HB2    H   .   .   .   .   .   2.40080   2.10080   2.70080   .   .   .   .   .   A   .   27   LEU   H     .   .   A   .   27   LEU   HB2    .   .   .   27   .   HN     .   .   .   .   .   27   .   HB#    .   .   rr_1u0p   1    
+     199   2   OR   .   1   1   27   27   LEU   HB3   H   .   .   .   1   1   27   27   LEU   H      H   .   .   .   .   .   2.40080   2.10080   2.70080   .   .   .   .   .   A   .   27   LEU   HB3   .   .   A   .   27   LEU   H      .   .   .   27   .   HB#    .   .   .   .   .   27   .   HN     .   .   rr_1u0p   1    
+     200   1   .    .   1   1   8    8    ARG   HB3   H   .   .   .   1   1   9    9    ASP   H      H   .   .   .   .   .   2.79951   2.59951   3.44951   .   .   .   .   .   A   .   8    ARG   HB3   .   .   A   .   9    ASP   H      .   .   .   8    .   HB1    .   .   .   .   .   9    .   HN     .   .   rr_1u0p   1    
+     201   1   .    .   1   1   8    8    ARG   HB2   H   .   .   .   1   1   9    9    ASP   H      H   .   .   .   .   .   2.92799   2.72799   3.62799   .   .   .   .   .   A   .   8    ARG   HB2   .   .   A   .   9    ASP   H      .   .   .   8    .   HB2    .   .   .   .   .   9    .   HN     .   .   rr_1u0p   1    
+     202   1   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   23   23   LEU   MD1    H   .   .   .   .   .   3.01595   2.66595   4.21595   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   23   LEU   MD1    .   .   .   12   .   HN     .   .   .   .   .   23   .   HD##   .   .   rr_1u0p   1    
+     202   2   OR   .   1   1   12   12   ALA   H     H   .   .   .   1   1   23   23   LEU   MD2    H   .   .   .   .   .   3.01595   2.66595   4.21595   .   .   .   .   .   A   .   12   ALA   H     .   .   A   .   23   LEU   MD2    .   .   .   12   .   HN     .   .   .   .   .   23   .   HD##   .   .   rr_1u0p   1    
+     203   1   .    .   1   1   25   25   THR   HB    H   .   .   .   1   1   26   26   PHE   H      H   .   .   .   .   .   2.72435   1.82435   3.62435   .   .   .   .   .   A   .   25   THR   HB    .   .   A   .   26   PHE   H      .   .   .   25   .   HB#    .   .   .   .   .   26   .   HN     .   .   rr_1u0p   1    
+     204   1   OR   .   1   1   8    8    ARG   H     H   .   .   .   1   1   9    9    ASP   HB3    H   .   .   .   .   .   2.87137   2.07137   4.57137   .   .   .   .   .   A   .   8    ARG   H     .   .   A   .   9    ASP   HB3    .   .   .   8    .   HN     .   .   .   .   .   9    .   HB#    .   .   rr_1u0p   1    
+     204   2   OR   .   1   1   8    8    ARG   H     H   .   .   .   1   1   9    9    ASP   HB2    H   .   .   .   .   .   2.87137   2.07137   4.57137   .   .   .   .   .   A   .   8    ARG   H     .   .   A   .   9    ASP   HB2    .   .   .   8    .   HN     .   .   .   .   .   9    .   HB#    .   .   rr_1u0p   1    
+     205   1   .    .   1   1   16   16   LYS   HA    H   .   .   .   1   1   19   19   GLU   H      H   .   .   .   .   .   3.60791   3.10791   4.60791   .   .   .   .   .   A   .   16   LYS   HA    .   .   A   .   19   GLU   H      .   .   .   16   .   HA     .   .   .   .   .   19   .   HN     .   .   rr_1u0p   1    
+     206   1   .    .   1   1   19   19   GLU   H     H   .   .   .   1   1   17   17   ASP   HA     H   .   .   .   .   .   3.60791   3.10791   4.60791   .   .   .   .   .   A   .   19   GLU   H     .   .   A   .   17   ASP   HA     .   .   .   19   .   HN     .   .   .   .   .   17   .   HA     .   .   rr_1u0p   1    
+     207   1   .    .   1   1   9    9    ASP   HA    H   .   .   .   1   1   11   11   GLN   H      H   .   .   .   .   .   3.01595   2.81595   4.11595   .   .   .   .   .   A   .   9    ASP   HA    .   .   A   .   11   GLN   H      .   .   .   9    .   HA     .   .   .   .   .   11   .   HN     .   .   rr_1u0p   1    
+
+   stop_
+
+   loop_
+      _Gen_dist_constraint_conv_err.ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_parse_file_ID
+      _Gen_dist_constraint_conv_err.Parse_file_constraint_ID
+      _Gen_dist_constraint_conv_err.Conv_error_type
+      _Gen_dist_constraint_conv_err.Conv_error_note
+      _Gen_dist_constraint_conv_err.Entry_ID
+      _Gen_dist_constraint_conv_err.Gen_dist_constraint_list_ID
+
+     1   2   1   1   "Not handling restraint 1, item 1, resonance(s) ' .1.HN' (nmrStar names),' .0.HA' (nmrStar names) not linked"    rr_1u0p   1    
+     2   2   2   1   "Not handling restraint 2, item 1, resonance(s) ' .1.HN' (nmrStar names),' .0.HB#' (nmrStar names) not linked"   rr_1u0p   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_dihedral_6
+   _Torsion_angle_constraint_list.Sf_category         torsion_angle_constraints
+   _Torsion_angle_constraint_list.Sf_framecode        CNS/XPLOR_dihedral_6
+   _Torsion_angle_constraint_list.Entry_ID            rr_1u0p
+   _Torsion_angle_constraint_list.ID                  1
+   _Torsion_angle_constraint_list.Details             'Generated by Wattos'
+   _Torsion_angle_constraint_list.Constraint_file_ID  1
+   _Torsion_angle_constraint_list.Block_ID            6
+
+   loop_
+      _Torsion_angle_constraint_software.Software_ID
+      _Torsion_angle_constraint_software.Software_label
+      _Torsion_angle_constraint_software.Method_ID
+      _Torsion_angle_constraint_software.Method_label
+      _Torsion_angle_constraint_software.Entry_ID
+      _Torsion_angle_constraint_software.Torsion_angle_constraint_list_ID
+
+     .   .   .   .   rr_1u0p   1    
+
+   stop_
+
+   loop_
+      _Torsion_angle_constraint.ID
+      _Torsion_angle_constraint.Torsion_angle_name
+      _Torsion_angle_constraint.Assembly_atom_ID_1
+      _Torsion_angle_constraint.Entity_assembly_ID_1
+      _Torsion_angle_constraint.Entity_ID_1
+      _Torsion_angle_constraint.Comp_index_ID_1
+      _Torsion_angle_constraint.Seq_ID_1
+      _Torsion_angle_constraint.Comp_ID_1
+      _Torsion_angle_constraint.Atom_ID_1
+      _Torsion_angle_constraint.Atom_type_1
+      _Torsion_angle_constraint.Resonance_ID_1
+      _Torsion_angle_constraint.Assembly_atom_ID_2
+      _Torsion_angle_constraint.Entity_assembly_ID_2
+      _Torsion_angle_constraint.Entity_ID_2
+      _Torsion_angle_constraint.Comp_index_ID_2
+      _Torsion_angle_constraint.Seq_ID_2
+      _Torsion_angle_constraint.Comp_ID_2
+      _Torsion_angle_constraint.Atom_ID_2
+      _Torsion_angle_constraint.Atom_type_2
+      _Torsion_angle_constraint.Resonance_ID_2
+      _Torsion_angle_constraint.Assembly_atom_ID_3
+      _Torsion_angle_constraint.Entity_assembly_ID_3
+      _Torsion_angle_constraint.Entity_ID_3
+      _Torsion_angle_constraint.Comp_index_ID_3
+      _Torsion_angle_constraint.Seq_ID_3
+      _Torsion_angle_constraint.Comp_ID_3
+      _Torsion_angle_constraint.Atom_ID_3
+      _Torsion_angle_constraint.Atom_type_3
+      _Torsion_angle_constraint.Resonance_ID_3
+      _Torsion_angle_constraint.Assembly_atom_ID_4
+      _Torsion_angle_constraint.Entity_assembly_ID_4
+      _Torsion_angle_constraint.Entity_ID_4
+      _Torsion_angle_constraint.Comp_index_ID_4
+      _Torsion_angle_constraint.Seq_ID_4
+      _Torsion_angle_constraint.Comp_ID_4
+      _Torsion_angle_constraint.Atom_ID_4
+      _Torsion_angle_constraint.Atom_type_4
+      _Torsion_angle_constraint.Resonance_ID_4
+      _Torsion_angle_constraint.Angle_lower_bound_val
+      _Torsion_angle_constraint.Angle_upper_bound_val
+      _Torsion_angle_constraint.Source_experiment_ID
+      _Torsion_angle_constraint.PDB_record_ID_1
+      _Torsion_angle_constraint.PDB_model_num_1
+      _Torsion_angle_constraint.PDB_strand_ID_1
+      _Torsion_angle_constraint.PDB_ins_code_1
+      _Torsion_angle_constraint.PDB_residue_no_1
+      _Torsion_angle_constraint.PDB_residue_name_1
+      _Torsion_angle_constraint.PDB_atom_name_1
+      _Torsion_angle_constraint.PDB_record_ID_2
+      _Torsion_angle_constraint.PDB_model_num_2
+      _Torsion_angle_constraint.PDB_strand_ID_2
+      _Torsion_angle_constraint.PDB_ins_code_2
+      _Torsion_angle_constraint.PDB_residue_no_2
+      _Torsion_angle_constraint.PDB_residue_name_2
+      _Torsion_angle_constraint.PDB_atom_name_2
+      _Torsion_angle_constraint.PDB_record_ID_3
+      _Torsion_angle_constraint.PDB_model_num_3
+      _Torsion_angle_constraint.PDB_strand_ID_3
+      _Torsion_angle_constraint.PDB_ins_code_3
+      _Torsion_angle_constraint.PDB_residue_no_3
+      _Torsion_angle_constraint.PDB_residue_name_3
+      _Torsion_angle_constraint.PDB_atom_name_3
+      _Torsion_angle_constraint.PDB_record_ID_4
+      _Torsion_angle_constraint.PDB_model_num_4
+      _Torsion_angle_constraint.PDB_strand_ID_4
+      _Torsion_angle_constraint.PDB_ins_code_4
+      _Torsion_angle_constraint.PDB_residue_no_4
+      _Torsion_angle_constraint.PDB_residue_name_4
+      _Torsion_angle_constraint.PDB_atom_name_4
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_1
+      _Torsion_angle_constraint.Auth_asym_ID_1
+      _Torsion_angle_constraint.Auth_chain_ID_1
+      _Torsion_angle_constraint.Auth_seq_ID_1
+      _Torsion_angle_constraint.Auth_comp_ID_1
+      _Torsion_angle_constraint.Auth_atom_ID_1
+      _Torsion_angle_constraint.Auth_alt_ID_1
+      _Torsion_angle_constraint.Auth_atom_name_1
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_2
+      _Torsion_angle_constraint.Auth_asym_ID_2
+      _Torsion_angle_constraint.Auth_chain_ID_2
+      _Torsion_angle_constraint.Auth_seq_ID_2
+      _Torsion_angle_constraint.Auth_comp_ID_2
+      _Torsion_angle_constraint.Auth_atom_ID_2
+      _Torsion_angle_constraint.Auth_alt_ID_2
+      _Torsion_angle_constraint.Auth_atom_name_2
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_3
+      _Torsion_angle_constraint.Auth_asym_ID_3
+      _Torsion_angle_constraint.Auth_chain_ID_3
+      _Torsion_angle_constraint.Auth_seq_ID_3
+      _Torsion_angle_constraint.Auth_comp_ID_3
+      _Torsion_angle_constraint.Auth_atom_ID_3
+      _Torsion_angle_constraint.Auth_alt_ID_3
+      _Torsion_angle_constraint.Auth_atom_name_3
+      _Torsion_angle_constraint.Auth_entity_assembly_ID_4
+      _Torsion_angle_constraint.Auth_asym_ID_4
+      _Torsion_angle_constraint.Auth_chain_ID_4
+      _Torsion_angle_constraint.Auth_seq_ID_4
+      _Torsion_angle_constraint.Auth_comp_ID_4
+      _Torsion_angle_constraint.Auth_atom_ID_4
+      _Torsion_angle_constraint.Auth_alt_ID_4
+      _Torsion_angle_constraint.Auth_atom_name_4
+      _Torsion_angle_constraint.Entry_ID
+      _Torsion_angle_constraint.Torsion_angle_constraint_list_ID
+
+     1    .   .   1   1   2    2    TYR   C   C   .   .   1   1   3    3    ILE   N    N   .   .   1   1   3    3    ILE   CA   C   .   .   1   1   3    3    ILE   C   C   .   -121.63   -73.35   .   .   .   A   .   2    TYR   C   .   .   A   .   3    ILE   N    .   .   A   .   3    ILE   CA   .   .   A   .   3    ILE   C   .   .   .   2    .   C   .   .   .   .   .   3    .   N    .   .   .   .   .   3    .   CA   .   .   .   .   .   3    .   C   .   .   rr_1u0p   1    
+     2    .   .   1   1   3    3    ILE   N   N   .   .   1   1   3    3    ILE   CA   C   .   .   1   1   3    3    ILE   C    C   .   .   1   1   4    4    PRO   N   N   .   98.00     130.26   .   .   .   A   .   3    ILE   N   .   .   A   .   3    ILE   CA   .   .   A   .   3    ILE   C    .   .   A   .   4    PRO   N   .   .   .   3    .   N   .   .   .   .   .   3    .   CA   .   .   .   .   .   3    .   C    .   .   .   .   .   4    .   N   .   .   rr_1u0p   1    
+     3    .   .   1   1   8    8    ARG   C   C   .   .   1   1   9    9    ASP   N    N   .   .   1   1   9    9    ASP   CA   C   .   .   1   1   9    9    ASP   C   C   .   -109.62   -69.34   .   .   .   A   .   8    ARG   C   .   .   A   .   9    ASP   N    .   .   A   .   9    ASP   CA   .   .   A   .   9    ASP   C   .   .   .   8    .   C   .   .   .   .   .   9    .   N    .   .   .   .   .   9    .   CA   .   .   .   .   .   9    .   C   .   .   rr_1u0p   1    
+     4    .   .   1   1   9    9    ASP   N   N   .   .   1   1   9    9    ASP   CA   C   .   .   1   1   9    9    ASP   C    C   .   .   1   1   10   10   GLY   N   N   .   -11.01    9.01     .   .   .   A   .   9    ASP   N   .   .   A   .   9    ASP   CA   .   .   A   .   9    ASP   C    .   .   A   .   10   GLY   N   .   .   .   9    .   N   .   .   .   .   .   9    .   CA   .   .   .   .   .   9    .   C    .   .   .   .   .   10   .   N   .   .   rr_1u0p   1    
+     5    .   .   1   1   10   10   GLY   N   N   .   .   1   1   10   10   GLY   CA   C   .   .   1   1   10   10   GLY   C    C   .   .   1   1   11   11   GLN   N   N   .   1.59      21.61    .   .   .   A   .   10   GLY   N   .   .   A   .   10   GLY   CA   .   .   A   .   10   GLY   C    .   .   A   .   11   GLN   N   .   .   .   10   .   N   .   .   .   .   .   10   .   CA   .   .   .   .   .   10   .   C    .   .   .   .   .   11   .   N   .   .   rr_1u0p   1    
+     6    .   .   1   1   10   10   GLY   C   C   .   .   1   1   11   11   GLN   N    N   .   .   1   1   11   11   GLN   CA   C   .   .   1   1   11   11   GLN   C   C   .   -125.14   -80.58   .   .   .   A   .   10   GLY   C   .   .   A   .   11   GLN   N    .   .   A   .   11   GLN   CA   .   .   A   .   11   GLN   C   .   .   .   10   .   C   .   .   .   .   .   11   .   N    .   .   .   .   .   11   .   CA   .   .   .   .   .   11   .   C   .   .   rr_1u0p   1    
+     7    .   .   1   1   11   11   GLN   N   N   .   .   1   1   11   11   GLN   CA   C   .   .   1   1   11   11   GLN   C    C   .   .   1   1   12   12   ALA   N   N   .   112.68    152.84   .   .   .   A   .   11   GLN   N   .   .   A   .   11   GLN   CA   .   .   A   .   11   GLN   C    .   .   A   .   12   ALA   N   .   .   .   11   .   N   .   .   .   .   .   11   .   CA   .   .   .   .   .   11   .   C    .   .   .   .   .   12   .   N   .   .   rr_1u0p   1    
+     8    .   .   1   1   12   12   ALA   N   N   .   .   1   1   12   12   ALA   CA   C   .   .   1   1   12   12   ALA   C    C   .   .   1   1   13   13   TYR   N   N   .   114.43    156.33   .   .   .   A   .   12   ALA   N   .   .   A   .   12   ALA   CA   .   .   A   .   12   ALA   C    .   .   A   .   13   TYR   N   .   .   .   12   .   N   .   .   .   .   .   12   .   CA   .   .   .   .   .   12   .   C    .   .   .   .   .   13   .   N   .   .   rr_1u0p   1    
+     9    .   .   1   1   12   12   ALA   C   C   .   .   1   1   13   13   TYR   N    N   .   .   1   1   13   13   TYR   CA   C   .   .   1   1   13   13   TYR   C   C   .   -118.53   -78.01   .   .   .   A   .   12   ALA   C   .   .   A   .   13   TYR   N    .   .   A   .   13   TYR   CA   .   .   A   .   13   TYR   C   .   .   .   12   .   C   .   .   .   .   .   13   .   N    .   .   .   .   .   13   .   CA   .   .   .   .   .   13   .   C   .   .   rr_1u0p   1    
+     10   .   .   1   1   13   13   TYR   N   N   .   .   1   1   13   13   TYR   CA   C   .   .   1   1   13   13   TYR   C    C   .   .   1   1   14   14   VAL   N   N   .   128.42    150.70   .   .   .   A   .   13   TYR   N   .   .   A   .   13   TYR   CA   .   .   A   .   13   TYR   C    .   .   A   .   14   VAL   N   .   .   .   13   .   N   .   .   .   .   .   13   .   CA   .   .   .   .   .   13   .   C    .   .   .   .   .   14   .   N   .   .   rr_1u0p   1    
+     11   .   .   1   1   13   13   TYR   C   C   .   .   1   1   14   14   VAL   N    N   .   .   1   1   14   14   VAL   CA   C   .   .   1   1   14   14   VAL   C   C   .   -137.91   -91.15   .   .   .   A   .   13   TYR   C   .   .   A   .   14   VAL   N    .   .   A   .   14   VAL   CA   .   .   A   .   14   VAL   C   .   .   .   13   .   C   .   .   .   .   .   14   .   N    .   .   .   .   .   14   .   CA   .   .   .   .   .   14   .   C   .   .   rr_1u0p   1    
+     12   .   .   1   1   14   14   VAL   N   N   .   .   1   1   14   14   VAL   CA   C   .   .   1   1   14   14   VAL   C    C   .   .   1   1   15   15   ARG   N   N   .   121.95    166.65   .   .   .   A   .   14   VAL   N   .   .   A   .   14   VAL   CA   .   .   A   .   14   VAL   C    .   .   A   .   15   ARG   N   .   .   .   14   .   N   .   .   .   .   .   14   .   CA   .   .   .   .   .   14   .   C    .   .   .   .   .   15   .   N   .   .   rr_1u0p   1    
+     13   .   .   1   1   14   14   VAL   C   C   .   .   1   1   15   15   ARG   N    N   .   .   1   1   15   15   ARG   CA   C   .   .   1   1   15   15   ARG   C   C   .   -119.61   -78.77   .   .   .   A   .   14   VAL   C   .   .   A   .   15   ARG   N    .   .   A   .   15   ARG   CA   .   .   A   .   15   ARG   C   .   .   .   14   .   C   .   .   .   .   .   15   .   N    .   .   .   .   .   15   .   CA   .   .   .   .   .   15   .   C   .   .   rr_1u0p   1    
+     14   .   .   1   1   15   15   ARG   N   N   .   .   1   1   15   15   ARG   CA   C   .   .   1   1   15   15   ARG   C    C   .   .   1   1   16   16   LYS   N   N   .   99.05     145.31   .   .   .   A   .   15   ARG   N   .   .   A   .   15   ARG   CA   .   .   A   .   15   ARG   C    .   .   A   .   16   LYS   N   .   .   .   15   .   N   .   .   .   .   .   15   .   CA   .   .   .   .   .   15   .   C    .   .   .   .   .   16   .   N   .   .   rr_1u0p   1    
+     15   .   .   1   1   15   15   ARG   C   C   .   .   1   1   16   16   LYS   N    N   .   .   1   1   16   16   LYS   CA   C   .   .   1   1   16   16   LYS   C   C   .   -107.12   -76.66   .   .   .   A   .   15   ARG   C   .   .   A   .   16   LYS   N    .   .   A   .   16   LYS   CA   .   .   A   .   16   LYS   C   .   .   .   15   .   C   .   .   .   .   .   16   .   N    .   .   .   .   .   16   .   CA   .   .   .   .   .   16   .   C   .   .   rr_1u0p   1    
+     16   .   .   1   1   16   16   LYS   N   N   .   .   1   1   16   16   LYS   CA   C   .   .   1   1   16   16   LYS   C    C   .   .   1   1   17   17   ASP   N   N   .   91.84     134.24   .   .   .   A   .   16   LYS   N   .   .   A   .   16   LYS   CA   .   .   A   .   16   LYS   C    .   .   A   .   17   ASP   N   .   .   .   16   .   N   .   .   .   .   .   16   .   CA   .   .   .   .   .   16   .   C    .   .   .   .   .   17   .   N   .   .   rr_1u0p   1    
+     17   .   .   1   1   18   18   GLY   C   C   .   .   1   1   19   19   GLU   N    N   .   .   1   1   19   19   GLU   CA   C   .   .   1   1   19   19   GLU   C   C   .   -126.51   -98.39   .   .   .   A   .   18   GLY   C   .   .   A   .   19   GLU   N    .   .   A   .   19   GLU   CA   .   .   A   .   19   GLU   C   .   .   .   18   .   C   .   .   .   .   .   19   .   N    .   .   .   .   .   19   .   CA   .   .   .   .   .   19   .   C   .   .   rr_1u0p   1    
+     18   .   .   1   1   19   19   GLU   N   N   .   .   1   1   19   19   GLU   CA   C   .   .   1   1   19   19   GLU   C    C   .   .   1   1   20   20   TRP   N   N   .   123.26    160.38   .   .   .   A   .   19   GLU   N   .   .   A   .   19   GLU   CA   .   .   A   .   19   GLU   C    .   .   A   .   20   TRP   N   .   .   .   19   .   N   .   .   .   .   .   19   .   CA   .   .   .   .   .   19   .   C    .   .   .   .   .   20   .   N   .   .   rr_1u0p   1    
+     19   .   .   1   1   19   19   GLU   C   C   .   .   1   1   20   20   TRP   N    N   .   .   1   1   20   20   TRP   CA   C   .   .   1   1   20   20   TRP   C   C   .   -115.39   -69.71   .   .   .   A   .   19   GLU   C   .   .   A   .   20   TRP   N    .   .   A   .   20   TRP   CA   .   .   A   .   20   TRP   C   .   .   .   19   .   C   .   .   .   .   .   20   .   N    .   .   .   .   .   20   .   CA   .   .   .   .   .   20   .   C   .   .   rr_1u0p   1    
+     20   .   .   1   1   21   21   VAL   N   N   .   .   1   1   21   21   VAL   CA   C   .   .   1   1   21   21   VAL   C    C   .   .   1   1   22   22   LEU   N   N   .   111.31    164.41   .   .   .   A   .   21   VAL   N   .   .   A   .   21   VAL   CA   .   .   A   .   21   VAL   C    .   .   A   .   22   LEU   N   .   .   .   21   .   N   .   .   .   .   .   21   .   CA   .   .   .   .   .   21   .   C    .   .   .   .   .   22   .   N   .   .   rr_1u0p   1    
+     21   .   .   1   1   21   21   VAL   C   C   .   .   1   1   22   22   LEU   N    N   .   .   1   1   22   22   LEU   CA   C   .   .   1   1   22   22   LEU   C   C   .   -90.02    -67.44   .   .   .   A   .   21   VAL   C   .   .   A   .   22   LEU   N    .   .   A   .   22   LEU   CA   .   .   A   .   22   LEU   C   .   .   .   21   .   C   .   .   .   .   .   22   .   N    .   .   .   .   .   22   .   CA   .   .   .   .   .   22   .   C   .   .   rr_1u0p   1    
+     22   .   .   1   1   22   22   LEU   N   N   .   .   1   1   22   22   LEU   CA   C   .   .   1   1   22   22   LEU   C    C   .   .   1   1   23   23   LEU   N   N   .   104.58    144.14   .   .   .   A   .   22   LEU   N   .   .   A   .   22   LEU   CA   .   .   A   .   22   LEU   C    .   .   A   .   23   LEU   N   .   .   .   22   .   N   .   .   .   .   .   22   .   CA   .   .   .   .   .   22   .   C    .   .   .   .   .   23   .   N   .   .   rr_1u0p   1    
+     23   .   .   1   1   22   22   LEU   C   C   .   .   1   1   23   23   LEU   N    N   .   .   1   1   23   23   LEU   CA   C   .   .   1   1   23   23   LEU   C   C   .   -114.57   -59.09   .   .   .   A   .   22   LEU   C   .   .   A   .   23   LEU   N    .   .   A   .   23   LEU   CA   .   .   A   .   23   LEU   C   .   .   .   22   .   C   .   .   .   .   .   23   .   N    .   .   .   .   .   23   .   CA   .   .   .   .   .   23   .   C   .   .   rr_1u0p   1    
+     24   .   .   1   1   24   24   SER   C   C   .   .   1   1   25   25   THR   N    N   .   .   1   1   25   25   THR   CA   C   .   .   1   1   25   25   THR   C   C   .   -102.17   -72.91   .   .   .   A   .   24   SER   C   .   .   A   .   25   THR   N    .   .   A   .   25   THR   CA   .   .   A   .   25   THR   C   .   .   .   24   .   C   .   .   .   .   .   25   .   N    .   .   .   .   .   25   .   CA   .   .   .   .   .   25   .   C   .   .   rr_1u0p   1    
+     25   .   .   1   1   25   25   THR   C   C   .   .   1   1   26   26   PHE   N    N   .   .   1   1   26   26   PHE   CA   C   .   .   1   1   26   26   PHE   C   C   .   -124.70   -87.62   .   .   .   A   .   25   THR   C   .   .   A   .   26   PHE   N    .   .   A   .   26   PHE   CA   .   .   A   .   26   PHE   C   .   .   .   25   .   C   .   .   .   .   .   26   .   N    .   .   .   .   .   26   .   CA   .   .   .   .   .   26   .   C   .   .   rr_1u0p   1    
+
+   stop_
+
+save_
+
+save_CNS/XPLOR_dipolar_coupling_5
+   _RDC_constraint_list.Sf_category         RDC_constraints
+   _RDC_constraint_list.Sf_framecode        CNS/XPLOR_dipolar_coupling_5
+   _RDC_constraint_list.Entry_ID            rr_1u0p
+   _RDC_constraint_list.ID                  1
+   _RDC_constraint_list.Details             'Generated by Wattos'
+   _RDC_constraint_list.Constraint_file_ID  1
+   _RDC_constraint_list.Block_ID            5
+
+   loop_
+      _RDC_constraint_software.Software_ID
+      _RDC_constraint_software.Software_label
+      _RDC_constraint_software.Method_ID
+      _RDC_constraint_software.Method_label
+      _RDC_constraint_software.Entry_ID
+      _RDC_constraint_software.RDC_constraint_list_ID
+
+     .   .   .   .   rr_1u0p   1    
+
+   stop_
+
+   loop_
+      _RDC_constraint.ID
+      _RDC_constraint.Assembly_atom_ID_1
+      _RDC_constraint.Entity_assembly_ID_1
+      _RDC_constraint.Entity_ID_1
+      _RDC_constraint.Comp_index_ID_1
+      _RDC_constraint.Seq_ID_1
+      _RDC_constraint.Comp_ID_1
+      _RDC_constraint.Atom_ID_1
+      _RDC_constraint.Atom_type_1
+      _RDC_constraint.Atom_isotope_number_1
+      _RDC_constraint.Resonance_ID_1
+      _RDC_constraint.Assembly_atom_ID_2
+      _RDC_constraint.Entity_assembly_ID_2
+      _RDC_constraint.Entity_ID_2
+      _RDC_constraint.Comp_index_ID_2
+      _RDC_constraint.Seq_ID_2
+      _RDC_constraint.Comp_ID_2
+      _RDC_constraint.Atom_ID_2
+      _RDC_constraint.Atom_type_2
+      _RDC_constraint.Atom_isotope_number_2
+      _RDC_constraint.Resonance_ID_2
+      _RDC_constraint.RDC_val
+      _RDC_constraint.RDC_lower_bound
+      _RDC_constraint.RDC_upper_bound
+      _RDC_constraint.RDC_val_err
+      _RDC_constraint.RDC_val_scale_factor
+      _RDC_constraint.RDC_bond_length
+      _RDC_constraint.Source_experiment_ID
+      _RDC_constraint.PDB_record_ID_1
+      _RDC_constraint.PDB_model_num_1
+      _RDC_constraint.PDB_strand_ID_1
+      _RDC_constraint.PDB_ins_code_1
+      _RDC_constraint.PDB_residue_no_1
+      _RDC_constraint.PDB_residue_name_1
+      _RDC_constraint.PDB_atom_name_1
+      _RDC_constraint.PDB_record_ID_2
+      _RDC_constraint.PDB_model_num_2
+      _RDC_constraint.PDB_strand_ID_2
+      _RDC_constraint.PDB_ins_code_2
+      _RDC_constraint.PDB_residue_no_2
+      _RDC_constraint.PDB_residue_name_2
+      _RDC_constraint.PDB_atom_name_2
+      _RDC_constraint.Auth_entity_assembly_ID_1
+      _RDC_constraint.Auth_asym_ID_1
+      _RDC_constraint.Auth_chain_ID_1
+      _RDC_constraint.Auth_seq_ID_1
+      _RDC_constraint.Auth_comp_ID_1
+      _RDC_constraint.Auth_atom_ID_1
+      _RDC_constraint.Auth_alt_ID_1
+      _RDC_constraint.Auth_atom_name_1
+      _RDC_constraint.Auth_entity_assembly_ID_2
+      _RDC_constraint.Auth_asym_ID_2
+      _RDC_constraint.Auth_chain_ID_2
+      _RDC_constraint.Auth_seq_ID_2
+      _RDC_constraint.Auth_comp_ID_2
+      _RDC_constraint.Auth_atom_ID_2
+      _RDC_constraint.Auth_alt_ID_2
+      _RDC_constraint.Auth_atom_name_2
+      _RDC_constraint.Entry_ID
+      _RDC_constraint.RDC_constraint_list_ID
+
+     1    .   1   1   4    4    PRO   CA   C   .   .   .   1   1   4    4    PRO   HA   H   .   .   -6.407    .   .   .   .   .   .   .   .   A   .   4    PRO   HA   .   .   A   .   4    PRO   CA   .   .   .   4    .   HA   .   .   .   .   .   4    .   CA   .   .   rr_1u0p   1    
+     2    .   1   1   8    8    ARG   CA   C   .   .   .   1   1   8    8    ARG   HA   H   .   .   -6.174    .   .   .   .   .   .   .   .   A   .   8    ARG   HA   .   .   A   .   8    ARG   CA   .   .   .   8    .   HA   .   .   .   .   .   8    .   CA   .   .   rr_1u0p   1    
+     3    .   1   1   9    9    ASP   CA   C   .   .   .   1   1   9    9    ASP   HA   H   .   .   -4.114    .   .   .   .   .   .   .   .   A   .   9    ASP   HA   .   .   A   .   9    ASP   CA   .   .   .   9    .   HA   .   .   .   .   .   9    .   CA   .   .   rr_1u0p   1    
+     4    .   1   1   11   11   GLN   CA   C   .   .   .   1   1   11   11   GLN   HA   H   .   .   -6.640    .   .   .   .   .   .   .   .   A   .   11   GLN   HA   .   .   A   .   11   GLN   CA   .   .   .   11   .   HA   .   .   .   .   .   11   .   CA   .   .   rr_1u0p   1    
+     5    .   1   1   12   12   ALA   CA   C   .   .   .   1   1   12   12   ALA   HA   H   .   .   -9.150    .   .   .   .   .   .   .   .   A   .   12   ALA   HA   .   .   A   .   12   ALA   CA   .   .   .   12   .   HA   .   .   .   .   .   12   .   CA   .   .   rr_1u0p   1    
+     6    .   1   1   13   13   TYR   CA   C   .   .   .   1   1   13   13   TYR   HA   H   .   .   6.867     .   .   .   .   .   .   .   .   A   .   13   TYR   HA   .   .   A   .   13   TYR   CA   .   .   .   13   .   HA   .   .   .   .   .   13   .   CA   .   .   rr_1u0p   1    
+     7    .   1   1   14   14   VAL   CA   C   .   .   .   1   1   14   14   VAL   HA   H   .   .   7.095     .   .   .   .   .   .   .   .   A   .   14   VAL   HA   .   .   A   .   14   VAL   CA   .   .   .   14   .   HA   .   .   .   .   .   14   .   CA   .   .   rr_1u0p   1    
+     8    .   1   1   15   15   ARG   CA   C   .   .   .   1   1   15   15   ARG   HA   H   .   .   2.287     .   .   .   .   .   .   .   .   A   .   15   ARG   HA   .   .   A   .   15   ARG   CA   .   .   .   15   .   HA   .   .   .   .   .   15   .   CA   .   .   rr_1u0p   1    
+     9    .   1   1   16   16   LYS   CA   C   .   .   .   1   1   16   16   LYS   HA   H   .   .   -1.144    .   .   .   .   .   .   .   .   A   .   16   LYS   HA   .   .   A   .   16   LYS   CA   .   .   .   16   .   HA   .   .   .   .   .   16   .   CA   .   .   rr_1u0p   1    
+     10   .   1   1   17   17   ASP   CA   C   .   .   .   1   1   17   17   ASP   HA   H   .   .   -2.520    .   .   .   .   .   .   .   .   A   .   17   ASP   HA   .   .   A   .   17   ASP   CA   .   .   .   17   .   HA   .   .   .   .   .   17   .   CA   .   .   rr_1u0p   1    
+     11   .   1   1   19   19   GLU   CA   C   .   .   .   1   1   19   19   GLU   HA   H   .   .   -12.126   .   .   .   .   .   .   .   .   A   .   19   GLU   HA   .   .   A   .   19   GLU   CA   .   .   .   19   .   HA   .   .   .   .   .   19   .   CA   .   .   rr_1u0p   1    
+     12   .   1   1   20   20   TRP   CA   C   .   .   .   1   1   20   20   TRP   HA   H   .   .   1.832     .   .   .   .   .   .   .   .   A   .   20   TRP   HA   .   .   A   .   20   TRP   CA   .   .   .   20   .   HA   .   .   .   .   .   20   .   CA   .   .   rr_1u0p   1    
+     13   .   1   1   21   21   VAL   CA   C   .   .   .   1   1   21   21   VAL   HA   H   .   .   3.431     .   .   .   .   .   .   .   .   A   .   21   VAL   HA   .   .   A   .   21   VAL   CA   .   .   .   21   .   HA   .   .   .   .   .   21   .   CA   .   .   rr_1u0p   1    
+     14   .   1   1   22   22   LEU   CA   C   .   .   .   1   1   22   22   LEU   HA   H   .   .   6.422     .   .   .   .   .   .   .   .   A   .   22   LEU   HA   .   .   A   .   22   LEU   CA   .   .   .   22   .   HA   .   .   .   .   .   22   .   CA   .   .   rr_1u0p   1    
+     15   .   1   1   8    8    ARG   N    N   .   .   .   1   1   8    8    ARG   H    H   .   .   -5.130    .   .   .   .   .   .   .   .   A   .   8    ARG   H    .   .   A   .   8    ARG   N    .   .   .   8    .   HN   .   .   .   .   .   8    .   N    .   .   rr_1u0p   1    
+     16   .   1   1   9    9    ASP   N    N   .   .   .   1   1   9    9    ASP   H    H   .   .   -2.311    .   .   .   .   .   .   .   .   A   .   9    ASP   H    .   .   A   .   9    ASP   N    .   .   .   9    .   HN   .   .   .   .   .   9    .   N    .   .   rr_1u0p   1    
+     17   .   1   1   10   10   GLY   N    N   .   .   .   1   1   10   10   GLY   H    H   .   .   -1.124    .   .   .   .   .   .   .   .   A   .   10   GLY   H    .   .   A   .   10   GLY   N    .   .   .   10   .   HN   .   .   .   .   .   10   .   N    .   .   rr_1u0p   1    
+     18   .   1   1   11   11   GLN   N    N   .   .   .   1   1   11   11   GLN   H    H   .   .   -2.798    .   .   .   .   .   .   .   .   A   .   11   GLN   H    .   .   A   .   11   GLN   N    .   .   .   11   .   HN   .   .   .   .   .   11   .   N    .   .   rr_1u0p   1    
+     19   .   1   1   12   12   ALA   N    N   .   .   .   1   1   12   12   ALA   H    H   .   .   -4.646    .   .   .   .   .   .   .   .   A   .   12   ALA   H    .   .   A   .   12   ALA   N    .   .   .   12   .   HN   .   .   .   .   .   12   .   N    .   .   rr_1u0p   1    
+     20   .   1   1   13   13   TYR   N    N   .   .   .   1   1   13   13   TYR   H    H   .   .   4.347     .   .   .   .   .   .   .   .   A   .   13   TYR   H    .   .   A   .   13   TYR   N    .   .   .   13   .   HN   .   .   .   .   .   13   .   N    .   .   rr_1u0p   1    
+     21   .   1   1   14   14   VAL   N    N   .   .   .   1   1   14   14   VAL   H    H   .   .   10.951    .   .   .   .   .   .   .   .   A   .   14   VAL   H    .   .   A   .   14   VAL   N    .   .   .   14   .   HN   .   .   .   .   .   14   .   N    .   .   rr_1u0p   1    
+     22   .   1   1   15   15   ARG   N    N   .   .   .   1   1   15   15   ARG   H    H   .   .   9.811     .   .   .   .   .   .   .   .   A   .   15   ARG   H    .   .   A   .   15   ARG   N    .   .   .   15   .   HN   .   .   .   .   .   15   .   N    .   .   rr_1u0p   1    
+     23   .   1   1   16   16   LYS   N    N   .   .   .   1   1   16   16   LYS   H    H   .   .   -3.431    .   .   .   .   .   .   .   .   A   .   16   LYS   H    .   .   A   .   16   LYS   N    .   .   .   16   .   HN   .   .   .   .   .   16   .   N    .   .   rr_1u0p   1    
+     24   .   1   1   17   17   ASP   N    N   .   .   .   1   1   17   17   ASP   H    H   .   .   1.821     .   .   .   .   .   .   .   .   A   .   17   ASP   H    .   .   A   .   17   ASP   N    .   .   .   17   .   HN   .   .   .   .   .   17   .   N    .   .   rr_1u0p   1    
+     25   .   1   1   18   18   GLY   N    N   .   .   .   1   1   18   18   GLY   H    H   .   .   6.874     .   .   .   .   .   .   .   .   A   .   18   GLY   H    .   .   A   .   18   GLY   N    .   .   .   18   .   HN   .   .   .   .   .   18   .   N    .   .   rr_1u0p   1    
+     26   .   1   1   19   19   GLU   N    N   .   .   .   1   1   19   19   GLU   H    H   .   .   -8.810    .   .   .   .   .   .   .   .   A   .   19   GLU   H    .   .   A   .   19   GLU   N    .   .   .   19   .   HN   .   .   .   .   .   19   .   N    .   .   rr_1u0p   1    
+     27   .   1   1   20   20   TRP   N    N   .   .   .   1   1   20   20   TRP   H    H   .   .   -2.629    .   .   .   .   .   .   .   .   A   .   20   TRP   H    .   .   A   .   20   TRP   N    .   .   .   20   .   HN   .   .   .   .   .   20   .   N    .   .   rr_1u0p   1    
+     28   .   1   1   21   21   VAL   N    N   .   .   .   1   1   21   21   VAL   H    H   .   .   7.443     .   .   .   .   .   .   .   .   A   .   21   VAL   H    .   .   A   .   21   VAL   N    .   .   .   21   .   HN   .   .   .   .   .   21   .   N    .   .   rr_1u0p   1    
+     29   .   1   1   22   22   LEU   N    N   .   .   .   1   1   22   22   LEU   H    H   .   .   11.010    .   .   .   .   .   .   .   .   A   .   22   LEU   H    .   .   A   .   22   LEU   N    .   .   .   22   .   HN   .   .   .   .   .   22   .   N    .   .   rr_1u0p   1    
+
+   stop_
+
+save_
+
+save_MR_file_comment_1
+   _Org_constr_file_comment.Sf_framecode        MR_file_comment_1
+   _Org_constr_file_comment.Sf_category         org_constr_file_comment
+   _Org_constr_file_comment.Entry_ID            rr_1u0p
+   _Org_constr_file_comment.ID                  1
+   _Org_constr_file_comment.Constraint_file_ID  1
+   _Org_constr_file_comment.Block_ID            1
+   _Org_constr_file_comment.Details             'Generated by Wattos'
+   _Org_constr_file_comment.Comment           
+;
+*HEADER STRUCTURAL PROTEIN 14-JUL-04 1U0P
+*TITLE STABLE A-STATE HAIRPIN OF T4 FIBRITIN FOLDON
+*COMPND MOL_ID: 1;
+*COMPND 2 MOLECULE: FIBRITIN;
+*COMPND 3 CHAIN: A;
+*COMPND 4 FRAGMENT: C-TERMINAL DOMAIN;
+*COMPND 5 SYNONYM: WHISKER ANTIGEN CONTROL PROTEIN;
+*COMPND 6 ENGINEERED: YES
+*SOURCE MOL_ID: 1;
+*SOURCE 2 ORGANISM_SCIENTIFIC: BACTERIOPHAGE OX2;
+*SOURCE 3 ORGANISM_COMMON: T4-LIKE VIRUS;
+*SOURCE 4 EXPRESSION_SYSTEM: ESCHERICHIA COLI;
+*SOURCE 5 EXPRESSION_SYSTEM_COMMON: BACTERIA;
+*SOURCE 6 EXPRESSION_SYSTEM_STRAIN: BL21(DE3);
+*SOURCE 7 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID
+*KEYWDS BETA-HAIRPIN, HAIRPIN, FOLDING NUCLEUS
+*EXPDTA NMR, 10 STRUCTURES
+*AUTHOR S.MEIER, S.GUTHE, T.KIEFHABER, S.GRZESIEK
+*REVDAT 1 22-FEB-05 1U0P 0
+;
+
+save_

@@ -1,0 +1,69 @@
+general:
+  name: "nmr_baseline"
+  output_folder: "nmr_pipeline_outputs"
+  batch_size: 16
+  seed: 0
+
+protein:
+  # Example target: PDB 1u0p (single chain). Swap in your own sequence / pdb_id;
+  # the sequence must match nmr_pipeline_inputs/metadata/<pdb_id>/<pdb_id>.json.
+  sequence: "GYIPEAPRDGQAYVRKDGEWVLLSTFL"
+  pdb_id: "1u0p"
+  residue_range: [0,1] # (list for each individual chain)
+  reference_pdb: "nmr_pipeline_inputs/pdbs/1u0p/1u0p_fixed.pdb"       # passed to the model manager / used to save the pdb
+  reference_raw_pdb: "nmr_pipeline_inputs/pdbs/1u0p/1u0p_fixed.pdb"   # used to save the merged pdb
+  reference_raw_pdb_chain: A
+
+model_manager:
+  N_cycle: 10
+  chunk_size: 256
+  diffusion_N: 200
+  gamma0: 0.8
+  gamma_min: 1.0
+  noise_scale_lambda: 1.003
+  step_scale_eta: 1.0
+  msa_save_dir: "./alignment_dir"
+  msa_embedding_cache_dir: "./msa_cache"
+  model_checkpoint_path: "./src/af3-dev/release_model/model_v0.2.0.pt"
+  dump_dir: "protenix_output"
+  use_msa: true
+
+wandb:
+  login_key: null
+  mode: "disabled"    # "disabled" or "online"; if "online", set login_key + project
+  project: null
+
+it_optimization_parameters:
+  learning_rate: 6e-2
+  outer_diffusion_steps: 20
+  max_grad_norm: 0.6
+  log_grads: False
+  save_msa_every_n_steps: 40
+
+loss_function:
+  loss_function_type: "nmr"          # NMR restraint objective (only supported main loss)
+  adversarial_loss_function: "anchor"
+
+  nmr_loss_function:
+    weight: 1.0
+    # Parsed NOE restraints. Subsampled variants exist for some targets
+    # (e.g. <id>_p_10.csv / _p_25 / _p_50 / _p_75 = fraction of restraints kept).
+    reference_nmr: "nmr_pipeline_inputs/restraints/1u0p/1u0p.csv"
+    pdb_file: "nmr_pipeline_inputs/pdbs/1u0p/1u0p_fixed.pdb"
+    noe_scale: 1.0
+    iid_loss: false
+    # Optional RDC / relaxation restraints (leave null + scale 0.0 to disable):
+    methyl_rdc_file: null
+    methyl_rdc_scale: 0.0
+    amide_rdc_file: null
+    amide_rdc_scale: 0.0
+    methyl_relax_file: null
+    methyl_relax_scale: 0.0
+    amide_relax_file: null
+    amide_relax_scale: 0.0
+
+  # Anchor keeps the optimized (s, z) close to the pairformer baseline.
+  # Required: the adversarial loss reads these regardless of the main loss.
+  anchor_loss_function:
+    lambda_s: 1e-4
+    lambda_z: 1e-3
