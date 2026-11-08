@@ -34,6 +34,7 @@ experiments:
 |---|---|---|
 | Confidence (`iPTM` / `pTM` / `pLDDT`) | push the model toward higher self-confidence; useful for complex docking | af3, boltz |
 | NMR restraints | bias sampling toward NMR-consistent structures (NOE / RDC / relaxation) | boltz, protenix |
+| Geometric restraints (distance, position, substructure, domain orientation) defined interactively in ChimeraX | drag a sketch copy, restraints run as an IT-opt objective | protenix (via `chimerax/`) |
 | Anchor / regularization | keep the optimized embeddings near the trunk baseline (added to any objective) | all three |
 
 A common regularization theme across the forks is an **anchor (L2) term** that
@@ -62,7 +63,8 @@ it_opt/
 ├── af3/        AlphaFold 3 IT-opt (embedding optimization + coordinate guidance)
 ├── boltz/      Boltz-2 fork with embedding-space IT-opt (iPTM + NMR) and a
 │               template↔diffusion fixed-point experiment
-└── protenix/   Protenix fork with an IT-opt manager (NMR + anchor losses)
+├── protenix/   Protenix fork with an IT-opt manager (NMR + anchor losses)
+└── chimerax/   ChimeraX bundle: interactive geometric restraints → Protenix IT-opt (see chimerax/README.md)
 ```
 
 ### `af3/` — AlphaFold 3

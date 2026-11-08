@@ -1,0 +1,38 @@
+[build-system]
+requires = ["ChimeraX-BundleBuilder>=1.4.0", "ChimeraX-Core ~=1.0"]
+build-backend = "chimerax.bundle_builder.cx_pep517"
+
+[project]
+name = "ChimeraX-ITopt"
+version = "0.1.0"
+license = { text = "MIT" }
+authors = [{ name = "Bronstein lab, IST Austria" }]
+description = "Geometric restraints for inference-time optimization (IT-opt) of Protenix"
+dependencies = ["ChimeraX-Core ~=1.0"]
+dynamic = ["classifiers", "requires-python"]
+
+[project.readme]
+content-type = "text"
+text = """Define geometric restraints (distances, atom positions, substructures,
+domain orientations) on a structure in ChimeraX and run IT-opt of Protenix
+trunk embeddings against them, watching the structures update live."""
+
+[project.urls]
+Home = "https://github.com/sai-advaith/it_opt"
+
+[tool.chimerax]
+min-session-version = 1
+max-session-version = 1
+category = "Structure Prediction"
+classifiers = ["Development Status :: 3 - Alpha"]
+
+[tool.chimerax.package-data]
+"src/" = ["backend/*.py"]
+
+[tool.chimerax.tool."ITopt Restraints"]
+category = "Structure Prediction"
+description = "Panel for IT-opt geometric restraints"
+
+[tool.chimerax.command.itopt]
+category = "Structure Prediction"
+description = "IT-opt restraints: itopt distance|position|substructure|orientation|list|delete|run|stop|..."

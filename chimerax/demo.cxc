@@ -1,0 +1,8 @@
+# ITopt demo: calmodulin, drag the C-lobe on a sketch copy
+open 1cll
+delete ~protein
+cartoon style width 1.5 thick 0.4
+ui tool show "ITopt Restraints"
+itopt sketch #1
+select #2/A:82-147
+log text <b>Try it:</b> the C-lobe of the sketch (#2) is selected. <b>Right-drag</b> to move it, <b>shift-right-drag</b> to rotate it (type <i>cofr sel</i> first to pivot on the lobe). Then press <b>Restrain moves</b> in the ITopt panel, and <b>Run</b> (set outer 2, steps 50 for a quick try). Or click <b>Click-2-atoms distance</b> and right-click two residues.
