@@ -1,0 +1,13 @@
+open 1cll
+delete ~protein
+itopt config runsDir ~/itopt_runs
+itopt sketch #1
+turn x 60 center #2/A:82-147@CA coordinateSystem #2 atoms #2/A:82-147
+itopt sketch restrain minDomain 20 tolerance 2 angleTol 15
+itopt list
+save target.cif #1
+save sketch.cif #2
+itopt run samples 4 outer 5 steps 100 cycles 4 msa true name cam_full
+itopt wait
+itopt list
+exit
